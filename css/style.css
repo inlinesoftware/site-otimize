@@ -105,7 +105,7 @@ header .container {
 }
 
 .menu-logo {
-    width: 160px;
+    width: 230px;
 
 }
 
@@ -635,6 +635,10 @@ footer.basebord {
         max-width: 540px;
     }
 
+    .menu-logo {
+        width: 220px;
+    
+    }
     /* Hero */
     .hero-title {
         font-size: 3rem;
