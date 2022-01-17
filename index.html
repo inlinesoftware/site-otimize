@@ -22,8 +22,7 @@
 
         gtag('config', 'AW-340230055');
     </script>
-    <!-- Event snippet for Contato conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <!-- Event snippet for Contato conversion page -->
     <script>
         function gtag_report_conversion(url) {
             var callback = function () {
@@ -38,7 +37,17 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             return false;
         }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9YTBRF0QC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-F9YTBRF0QC');
+    </script>
     <title>Otimize</title>
 </head>
 
@@ -68,7 +77,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="hero-container">
                 <h1 class="hero-title">Otimize Gestão Empresarial</h1>
                 <h2 class="hero-title-2">Mais Qualidade, Menos Despesas e Mais Eficiência</h2>
-                <button onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')" class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Realize um
+                <button onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')"
+                    class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Realize um
                         diagnóstico gratuito!</a>
                     <div class="icon"></div>
                 </button>
@@ -78,7 +88,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <!-- Hero section end -->
 
     <!-- Button whatssapp -->
-    <button onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')" id="button-wpp" aria-label="Abrir WhatsApp" class="button-wpp"><a
+    <button onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')" id="button-wpp"
+        aria-label="Abrir WhatsApp" class="button-wpp"><a
             href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">WhatsApp</a>
     </button>
 
@@ -171,7 +182,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <p class="paragraph-team">Queremos que você conheça o nosso time!</p>
                     <p class="paragraph-team">Nossa equipe é completa e especializada. Estamos a disposição para levar
                         as melhores soluções para o seu negócio</p>
-                    <button  onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')" class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Realize um
+                    <button onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')"
+                        class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Realize um
                             diagnóstico gratuito!</a>
                         <div class="icon"></div>
                     </button>
