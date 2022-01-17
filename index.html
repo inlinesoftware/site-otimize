@@ -10,6 +10,35 @@
     <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Ads: 340230055 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-340230055"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-340230055');
+    </script>
+    <!-- Event snippet for Contato conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-340230055/QlYnCPK-6JADEKf_naIB',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
     <title>Otimize</title>
 </head>
 
@@ -39,36 +68,42 @@
             <div class="hero-container">
                 <h1 class="hero-title">Otimize Gestão Empresarial</h1>
                 <h2 class="hero-title-2">Mais Qualidade, Menos Despesas e Mais Eficiência</h2>
-                    <button class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Realize um diagnóstico gratuito!</a>
-                        <div class="icon"></div>
-                    </button>
+                <button onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')" class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Realize um
+                        diagnóstico gratuito!</a>
+                    <div class="icon"></div>
+                </button>
             </div>
         </div>
     </section>
     <!-- Hero section end -->
 
     <!-- Button whatssapp -->
-        <button id="button-wpp" aria-label="Abrir WhatsApp"
-            class="button-wpp"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">WhatsApp</a>
-        </button>
+    <button onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')" id="button-wpp" aria-label="Abrir WhatsApp" class="button-wpp"><a
+            href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">WhatsApp</a>
+    </button>
 
     <!-- about-benefits -->
     <section class="about-benefits" id="nossas-soluções">
         <div class="container">
-            <h2 class="section-title">O que você e a sua empresa realmente ganham ao investir em um modelo de gestão de resultados?</h2>
+            <h2 class="section-title">O que você e a sua empresa realmente ganham ao investir em um modelo de gestão de
+                resultados?</h2>
             <hr>
             <p>Não é novidade alguma que o mercado está cada vez mais dinâmico e competitivo.</p><br>
             <p>Empresas que não investem em sua evolução contínua estão fadadas à extinção. </p><br>
-            <p>Por isso, se você deseja estar no mercado nos próximos anos, é necessário estar atento a estratégias que podem salvar a sua empresa (e os seus resultados).</p><br>
-            <p class="strategy-paragraph">Nós da Otimize acreditamos fortemente que os três pilares abaixo são fundamentais para que você possa construir uma empresa reconhecida, lucrativa e consistente:</p><br>
+            <p>Por isso, se você deseja estar no mercado nos próximos anos, é necessário estar atento a estratégias que
+                podem salvar a sua empresa (e os seus resultados).</p><br>
+            <p class="strategy-paragraph">Nós da Otimize acreditamos fortemente que os quatro pilares abaixo são
+                fundamentais para que você possa construir uma empresa reconhecida, lucrativa e consistente:</p><br>
             <div class="stategy-content">
                 <div class="strategy-content-details">
-                    <img class="strategy-img" src="img/Art1.png" alt="Figura: Estudo e análise de mercado e estratégia de negócios">
+                    <img class="strategy-img" src="img/Art1.png"
+                        alt="Figura: Estudo e análise de mercado e estratégia de negócios">
                     <p class="strategy-paragraph-details">Estudo e análise de mercado e estratégia de negócios</p>
                 </div>
 
                 <div class="strategy-content-details">
-                    <img class="strategy-img" src="img/Art2.png" alt="Figura: Gestão financeira e estratégias de lucros">
+                    <img class="strategy-img" src="img/Art2.png"
+                        alt="Figura: Gestão financeira e estratégias de lucros">
                     <p class="strategy-paragraph-details">Gestão financeira e estratégias de lucros</p>
                 </div>
 
@@ -81,7 +116,7 @@
                     <img class="strategy-img" src="img/Art4.png" alt="Figura: Design de processos empresariais">
                     <p class="strategy-paragraph-details">Design de processos empresariais</p>
                 </div>
-                
+
             </div>
     </section>
     <!-- about-benefits end -->
@@ -90,26 +125,29 @@
         <div class="container">
             <h2 class="section-title">A sua empresa está enfrentando algum desses problemas?</h2>
             <hr>
-            <div class="problems-details">               
+            <div class="problems-details">
                 <div class="problems-text">
                     <div class="problems-img">
                         <img src="img/Risk_management.png" alt="Gerenciamento de riscos">
                     </div>
-                    <p>Quando o assunto é gestão financeira, sinto que a minha empresa está correndo de olhos vendados;</p>
+                    <p>Quando o assunto é gestão financeira, sinto que a minha empresa está correndo de olhos vendados;
+                    </p>
                 </div>
 
                 <div class="problems-text">
                     <div class="problems-img">
                         <img src="img/layer1.png" alt="Muitas responsabilidades">
                     </div>
-                    <p class="problems-paragraph">Sou responsável por tudo na empresa e por conta disso não consigo gerar os resultados que desejo;</p>
+                    <p class="problems-paragraph">Sou responsável por tudo na empresa e por conta disso não consigo
+                        gerar os resultados que desejo;</p>
                 </div>
 
                 <div class="problems-text">
                     <div class="problems-img">
                         <img src="img/lamp.png" alt="Lâmpada">
                     </div>
-                    <p class="problems-paragraph">Não possuo uma estratégia clara para melhorar o desempenho dos setores da minha empresa. Tudo corre de maneira desorganizada e mal planejada;</p>
+                    <p class="problems-paragraph">Não possuo uma estratégia clara para melhorar o desempenho dos setores
+                        da minha empresa. Tudo corre de maneira desorganizada e mal planejada;</p>
                 </div>
 
             </div>
@@ -123,17 +161,21 @@
             <hr>
             <div class="details-team">
                 <div class="video-team">
-                    <video src="video/Apresentao_Negocios_Modernos_720p.mp4" poster="./video/post-video.png" controls></video>
+                    <video src="video/Apresentao_Negocios_Modernos_720p.mp4" poster="./video/post-video.png"
+                        controls></video>
                 </div><!-- video -->
 
                 <div class="text-team">
                     <h3 class="title-team">
                         Vingadores? Liga da Justiça? Quase isso... Esse time aqui está salvando muitas empresas.</h3>
                     <p class="paragraph-team">Queremos que você conheça o nosso time!</p>
-                    <p class="paragraph-team">Nossa equipe é completa e especializada. Estamos a disposição para levar as melhores soluções para o seu negócio</p>
-                    <button class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Realize um diagnóstico gratuito!</a><div class="icon"></div></button>
+                    <p class="paragraph-team">Nossa equipe é completa e especializada. Estamos a disposição para levar
+                        as melhores soluções para o seu negócio</p>
+                    <button  onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')" class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Realize um
+                            diagnóstico gratuito!</a>
+                        <div class="icon"></div>
+                    </button>
                 </div>
-
             </div>
         </div>
     </section>
@@ -146,7 +188,12 @@
             <div id="two" class="owl-carousel owl-theme comentarios">
                 <div class="items comentarios-detalhes">
                     <div class="aspas-img-1"><img src="img/aspas01.png" alt="aspas-duplas"></div>
-                    <p>Então,  sobre a consultoria,  estou gostando bastante.  É como se fosse uma luz no fim do túnel.  Veio como uma esperança para dias difíceis.  Estou aprendendo a colocar preços nos produtos e entender meu verdadeiro lucro.  Também estou entendendo como se faz pra dar entrada e saída de um produto e controlar meu estoque que era algo difícil pra mim.  Sem falar na minha própria vida financeira,  que eu mal sabia quanto gastava no final do mês.  Ainda tenho muito o que aprender,  mas até agora tem sido de extrema importância e feito a maior diferença nos meus dias.</p>
+                    <p>Então, sobre a consultoria, estou gostando bastante. É como se fosse uma luz no fim do túnel.
+                        Veio como uma esperança para dias difíceis. Estou aprendendo a colocar preços nos produtos e
+                        entender meu verdadeiro lucro. Também estou entendendo como se faz pra dar entrada e saída de um
+                        produto e controlar meu estoque que era algo difícil pra mim. Sem falar na minha própria vida
+                        financeira, que eu mal sabia quanto gastava no final do mês. Ainda tenho muito o que aprender,
+                        mas até agora tem sido de extrema importância e feito a maior diferença nos meus dias.</p>
                     <div class="aspas-img-2"><img src="img/aspas02.png" alt="aspas-duplas"></div>
                     <p class="paragraph-author">- Amanda</p>
                     <p>Proprietária Sorvete no Palito</p>
@@ -161,12 +208,13 @@
             <h2 class="section-title">Nossos Clientes</h2>
             <hr>
             <div id="one" class="owl-carousel owl-theme">
-                <div id="otimize-img" class="item"><img src="img/logos_clients/Logo.png" alt="Cliente"></div>
-                <div id="inline-img" class="item"><img src="img/logos_clients/image.png" alt="Cliente"></div>
-                <div id="mp-img" class="item"><img src="img/logos_clients/lOGO- Mlehorada - Sem fundo.png" alt="Cliente"></div>
-                <div id="webchange-img" class="item"><img src="img/logos_clients/Grupo 9888.png" alt="Cliente">
+                <div id="otimize-img" class="item"><img src="img/logos_clients/otimize.png" alt="Cliente"></div>
+                <div id="inline-img" class="item"><img src="img/logos_clients/inline.png" alt="Cliente"></div>
+                <div id="mp-img" class="item"><img src="img/logos_clients/mp_importados.png" alt="Mp Importados"></div>
+                <div id="webchange-img" class="item"><img src="img/logos_clients/web_change.png" alt="Web change">
                 </div>
-                <div id="sorvete-img" class="item"><img src="img/logos_clients/WhatsApp Image 2022-01-05 at 09.58.00.jpeg" alt="Cliente"></div>
+                <div id="sorvete-img" class="item"><img src="img/logos_clients/sorvete_no_palito.png"
+                        alt="Sorvete no palito"></div>
             </div>
         </div>
     </section>
@@ -180,29 +228,43 @@
                 <div class="items materials-details">
                     <img src="img/articles_img/1634239381683.jpg" alt="Material-gratuito">
                     <h3 class="title-article">Ser produtivo pode acabar com seus resultados!</h3>
-                    <p>Sim, eu sei. Parece meio contraditório dizer algo assim, mas a realidade é que essa afirmação não está errada – e você vai perceber isso nas próximas linhas.</p>
-                    <button class="materials-button"><a href="https://www.linkedin.com/pulse/ser-produtivo-pode-acabar-com-seus-resultados-/">Saber Mais</a></button>
+                    <p>Sim, eu sei. Parece meio contraditório dizer algo assim, mas a realidade é que essa afirmação não
+                        está errada – e você vai perceber isso nas próximas linhas.</p>
+                    <button class="materials-button"><a
+                            href="https://www.linkedin.com/pulse/ser-produtivo-pode-acabar-com-seus-resultados-/">Saber
+                            Mais</a></button>
                 </div>
 
                 <div class="items materials-details">
                     <img src="img/articles_img/1624722031524.jpg" alt="Material-gratuito">
-                    <h3 class="title-article">Qual a necessidade do mapeamento e otimização de processos em uma empresa?</h3>
-                    <p>Os processos são utilizados diariamente nas empresas para execução de tarefas ou desenvolvimento de produtos. As grandes empresas e as franquias não vivem sem processos. </p>
-                    <button class="materials-button"><a href="https://www.linkedin.com/pulse/qual-necessidade-do-mapeamento-e-otimiza%C3%A7%C3%A3o-/">Saber mais</a></button>
+                    <h3 class="title-article">Qual a necessidade do mapeamento e otimização de processos em uma empresa?
+                    </h3>
+                    <p>Os processos são utilizados diariamente nas empresas para execução de tarefas ou desenvolvimento
+                        de produtos. As grandes empresas e as franquias não vivem sem processos. </p>
+                    <button class="materials-button"><a
+                            href="https://www.linkedin.com/pulse/qual-necessidade-do-mapeamento-e-otimiza%C3%A7%C3%A3o-/">Saber
+                            mais</a></button>
                 </div>
 
                 <div class="items materials-details">
                     <img src="img/articles_img/1633630956932.jpg" alt="Material-gratuito">
                     <h3 class="title-article">Os 4 Estágios de um Mapeamento de Processos fora da curva</h3>
-                    <p>Estágio 1 – Compreender sem julgar Muito se fala sobre a importância de processos bem estruturados em empresas, mas, quando se trata de aplicação, na prática, a teoria é outra.</p>
-                    <button class="materials-button"><a href="https://www.linkedin.com/pulse/os-4-est%C3%A1gios-de-um-mapeamento-processos-/">Saber mais</a></button>
+                    <p>Estágio 1 – Compreender sem julgar Muito se fala sobre a importância de processos bem
+                        estruturados em empresas, mas, quando se trata de aplicação, na prática, a teoria é outra.</p>
+                    <button class="materials-button"><a
+                            href="https://www.linkedin.com/pulse/os-4-est%C3%A1gios-de-um-mapeamento-processos-/">Saber
+                            mais</a></button>
                 </div>
 
                 <div class="items materials-details">
                     <img src="img/articles_img/1633532783027.jpg" alt="Material-gratuito">
-                    <h3 class="title-article" >Modelagem de Processo de Negócio – Diferenças entre BPM, BPI, BPMS e BPMN</h3>
-                    <p>No mundo de gerenciamento de processos de negócio, existem várias siglas iniciadas com BP (business process), como o famoso BPMN, e todas essas siglas se relacionam.</p>
-                    <button class="materials-button"><a href="https://www.linkedin.com/pulse/modelagem-de-processo-neg%C3%B3cio-diferen%C3%A7as-/">Saber Mais</a></button>
+                    <h3 class="title-article">Modelagem de Processo de Negócio – Diferenças entre BPM, BPI, BPMS e BPMN
+                    </h3>
+                    <p>No mundo de gerenciamento de processos de negócio, existem várias siglas iniciadas com BP
+                        (business process), como o famoso BPMN, e todas essas siglas se relacionam.</p>
+                    <button class="materials-button"><a
+                            href="https://www.linkedin.com/pulse/modelagem-de-processo-neg%C3%B3cio-diferen%C3%A7as-/">Saber
+                            Mais</a></button>
                 </div>
             </div>
         </div>
@@ -245,7 +307,8 @@
                     <a href="https://www.instagram.com/otimizege/">
                         <img class="social-medias-logo" src="img/Grupo 10648.png" alt="Logo Instagram">
                     </a>
-                    <a href="https://www.linkedin.com/company/otimize-processos-empresariais"><img class="social-medias-logo" src="img/Grupo 10649.png" alt="Logo Linkedin"></a>
+                    <a href="https://www.linkedin.com/company/otimize-processos-empresariais"><img
+                            class="social-medias-logo" src="img/Grupo 10649.png" alt="Logo Linkedin"></a>
                 </div>
             </div>
 
@@ -258,6 +321,7 @@
     <script src="lib/owlCarousel/dist/owl.carousel.min.js"></script>
 
     <script type="text/javascript">
+        /* Carousel */
         $(document).ready(function () {
             var one = $("#one");
             var two = $("#two");
@@ -326,7 +390,6 @@
             });
         });
     </script>
-    <!-- script end -->
 </body>
 
 </html>

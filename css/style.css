@@ -231,12 +231,12 @@ section.problems .container {
 .problems {
     background-color: var(--clr-light-white);
 }
-.problems .container hr{
+
+.problems .container hr {
     margin: 3px auto 0;
 }
+
 .problems-img {
-    background-color: var(--clr-dark-blue);
-    padding: 40px;
     width: 180px;
     height: 170px;
     border-radius: 10px;
@@ -245,7 +245,6 @@ section.problems .container {
 
 .problems-img img {
     margin: auto;
-    height: 90px;
 }
 
 .problems-details {
@@ -279,7 +278,7 @@ section.our-team .container {
     overflow: hidden;
 }
 
-.video-team video{
+.video-team video {
     background-color: black;
 }
 
@@ -365,29 +364,37 @@ section.our-team .container {
     width: 200px;
 }
 
-#otimize-img{
-    background-color: var(--clr-dark-purple);
-}
+/* #otimize-img {
+    background-color: var(--clr-dark-purple); */
 
-#otimize-img, #inline-img{
+
+#otimize-img,
+#inline-img {
     margin-top: 12%;
 }
-#inline-img{
+
+#inline-img {
     background-color: #f8f6f6;
     width: 172px;
 }
 
-#inline-img img, #mp-img img, #webchange-img img, #sorvete-img img{
+#inline-img img,
+#mp-img img,
+#webchange-img img,
+#sorvete-img img {
     width: auto;
 }
 
 
-#webchange-img, #sorvete-img, #mp-img{
+#webchange-img,
+#sorvete-img,
+#mp-img {
     height: 130px;
     width: 152px;
 }
 
-#sorvete-img, #mp-img{
+#sorvete-img,
+#mp-img {
     background-color: #f8f6f6;
 }
 
@@ -397,7 +404,7 @@ section.our-team .container {
 }
 
 .depositions .container {
-    padding: 70px 0px 60px;
+    padding: 70px 15px 60px;
 }
 
 .items.comentarios-detalhes {
@@ -448,11 +455,11 @@ section.our-team .container {
     margin-top: 58px;
 }
 
-.materials-free .container h2{
+.materials-free .container h2 {
     color: var(--clr-light-white);
 }
 
-.materials-free .container hr{
+.materials-free .container hr {
     background-color: var(--clr-light-white);
 }
 
@@ -476,7 +483,7 @@ section.our-team .container {
     line-height: 1.35rem;
 }
 
-.title-article{
+.title-article {
     color: var(--clr-dark-blue);
     font-size: 0.95rem;
     padding: 30px 28px 0;
@@ -502,7 +509,7 @@ section.our-team .container {
     margin-left: 3px;
 }
 
-.materials-free .container .owl-theme .owl-dots .owl-dot.active span{
+.materials-free .container .owl-theme .owl-dots .owl-dot.active span {
     background: var(--clr-light-white);
 }
 
@@ -646,7 +653,7 @@ footer.basebord {
     }
 
     .hero {
-        height: 660px;
+        height: 870px;
     }
 
     .hero-container .hero-button {
@@ -663,7 +670,7 @@ footer.basebord {
     }
 
     /* about-benefits */
-    
+
     .stategy-content {
         justify-content: space-between;
     }
@@ -671,7 +678,7 @@ footer.basebord {
     /* depositions */
     .items.comentarios-detalhes {
         padding: 30px 50px 20px;
-        width: 72%;
+        width: 100%;
         margin: auto;
     }
 
@@ -679,23 +686,24 @@ footer.basebord {
         width: 30px;
         left: 100%;
     }
-
-    .aspas-img-2 {
-        width: 30px;
-        margin-left: 15px;
-    }
-
-    .comentarios-detalhes p {
-        font-size: 1.32rem;
-    }
-
-    /* our-clients */
-    .our-clients .container {
-        padding: 65px 58px 160px
-    }
-
-    
 }
+
+.aspas-img-2 {
+    width: 30px;
+    margin-left: 15px;
+}
+
+.comentarios-detalhes p {
+    font-size: 1.32rem;
+}
+
+/* our-clients */
+.our-clients .container {
+    padding: 65px 15px 160px
+}
+
+
+
 
 @media (min-width: 768px) {
 
@@ -726,19 +734,22 @@ footer.basebord {
     .problems-img {
         margin: 0 auto 35px;
     }
+
     .problems-details {
         margin-top: 95px;
     }
+
     .problems-text {
         margin-top: 25px;
     }
-    .problems .container hr{
+
+    .problems .container hr {
         margin: 10px auto 40px;
     }
 
     /* our-team */
     section.our-team .container {
-        padding: 65px 0px 150px;
+        padding: 65px 15px 150px;
     }
 
     /* materials */
@@ -749,9 +760,9 @@ footer.basebord {
     .materials-free .container .owl-theme .owl-dots .owl-dot span {
         width: 42px;
         height: 8px;
-        margin: 30px 7px 7px;  
+        margin: 30px 7px 7px;
     }
-    
+
     /* basebord */
     .contactos-basebord {
         margin: 0 0 0 80px;
@@ -852,5 +863,5 @@ footer.basebord {
         padding: 10px 33px 13px;
     }
 
-  
+
 }
