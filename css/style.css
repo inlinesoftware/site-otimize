@@ -50,6 +50,9 @@ p {
     color: #676767;
 }
 
+button{
+    cursor: pointer;
+}
 
 .container {
     margin: auto;
@@ -118,6 +121,7 @@ header .container {
     width: 55px;
     height: 55px;
     background-size: 55px 55px;
+    cursor: pointer;
 }
 
 #button-wpp a {
@@ -212,7 +216,7 @@ section.about-benefits .container {
 
 .strategy-img {
     width: 100%;
-    height: 150px;
+    height: 162px;
 }
 
 .strategy-paragraph-details {
