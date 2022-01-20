@@ -658,7 +658,7 @@ footer.basebord {
     .hero-button {
         padding: 5px 27px 10px;
         border-radius: 18px;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 0.8rem;
     }
 
@@ -738,7 +738,7 @@ footer.basebord {
     .hero-button {
         padding: 7px 30px 12px;
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: 700;
     }
 
     /* Problems */
