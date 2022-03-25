@@ -171,11 +171,11 @@ section.hero .container {
 }
 
 .hero-button {
-    background-color: var(--clr-light-cyan);
-    padding: 0px 12px 8px;
+    background-color: var(--clr-dark-purple);
+    padding: 7px 22px 12px;
     border-radius: 15px;
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 
@@ -661,10 +661,10 @@ footer.basebord {
     }
 
     .hero-button {
-        padding: 5px 27px 10px;
+        padding: 13px 30px 15px;
         border-radius: 18px;
         font-weight: 700;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .hero {
@@ -741,8 +741,8 @@ footer.basebord {
 
     /* Hero */
     .hero-button {
-        padding: 10px 35px 12px;
-        font-size: 1.2rem;
+        padding: 16px 38px 18px;
+        font-size: 1.3rem;
         font-weight: 700;
     }
 
@@ -856,7 +856,7 @@ footer.basebord {
     .text-team .hero-button {
         margin-top: 14px;
         margin-left: 0;
-        font-size: 1.1em;
+        font-size: 1.3em;
         border-radius: 18px;
         padding: 10px 33px 13px;
     }
@@ -874,7 +874,7 @@ footer.basebord {
     .text-team .hero-button {
         margin-top: 82px;
         margin-left: 0;
-        font-size: 1.1em;
+        font-size: 1.3em;
         border-radius: 18px;
         padding: 10px 33px 13px;
     }
