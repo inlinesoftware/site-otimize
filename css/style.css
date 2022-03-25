@@ -50,7 +50,7 @@ p {
     color: #676767;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -387,12 +387,15 @@ section.our-team .container {
 #inline-img img,
 #mp-img img,
 #webchange-img img,
-#sorvete-img img {
+#sorvete-img img,
+#dhiogo-img img,
+#sabor-magico-img img {
     width: auto;
     height: 100%;
 }
 
-
+#sabor-magico-img,
+#dhiogo-img,
 #webchange-img,
 #sorvete-img,
 #mp-img {
@@ -644,8 +647,9 @@ footer.basebord {
 
     .menu-logo {
         width: 220px;
-    
+
     }
+
     /* Hero */
     .hero-title {
         font-size: 3rem;
@@ -737,8 +741,8 @@ footer.basebord {
 
     /* Hero */
     .hero-button {
-        padding: 7px 30px 12px;
-        font-size: 1rem;
+        padding: 10px 35px 12px;
+        font-size: 1.2rem;
         font-weight: 700;
     }
 
