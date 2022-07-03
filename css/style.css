@@ -12,7 +12,7 @@
 /* variables */
 :root {
     --clr-light-cyan: #1EC1BC;
-    --clr-light-white: #F5F5F5;
+    --clr-light-white: #EDEFFB;
     --clr-dark-black: #020202;
     --clr-dark-blue: #276484;
     --clr-dark-purple: #3E175A;
@@ -96,6 +96,7 @@ header .container {
 
 .menu-list {
     list-style: none;
+    max-width: 650px;
 }
 
 .menu-list li {
@@ -111,11 +112,12 @@ header .container {
 }
 
 .menu-list li a:hover {
-    color: var(--clr-light-white);
+    color: #afafaf;
+    transition-duration: .5s;
 }
 
 .menu-logo {
-    max-width: 230px;
+    max-width: 235px;
     width: 100%;
 }
 
@@ -359,14 +361,14 @@ section.hero .container {
 .hero-title {
     font-size: 1.6rem;
     font-weight: 900;
-    color: var(--clr-light-white);
+    color: #F5F5F5;
 }
 
 .hero-title-2 {
     font-size: 1rem;
-    color: var(--clr-light-white);
+    color: #F5F5F5;
     margin: 45px 5px 0;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 .hero-button {
@@ -375,6 +377,13 @@ section.hero .container {
     border-radius: 15px;
     font-weight: bold;
     font-size: 0.8rem;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+}
+
+.hero-button:hover{
+    background-color: #240a36;
+    transition-duration: .5s;
 }
 
 
@@ -666,7 +675,7 @@ section.our-team .container {
 }
 
 .materials-free .container h2 {
-    color: var(--clr-light-white);
+    color: #F5F5F5;
 }
 
 .materials-free .container hr {
@@ -848,7 +857,7 @@ footer.basebord {
     font-size: 0.85rem;
     font-family: Calibri, sans-serif;
     font-weight: 300;
-    color: var(--clr-light-white);
+    color: #F5F5F5;
 }
 
 .social-medias-title {
@@ -882,7 +891,7 @@ footer.basebord {
 }
 
 .copy {
-    color: var(--clr-light-white);
+    color: #F5F5F5;
     text-align: center;
     font-size: 1.08rem;
     font-weight: 550;
@@ -919,23 +928,23 @@ footer.basebord {
     }
 
     .menu-logo {
-        width: 220px;
+        width: 235px;
 
     }
 
     /* Hero */
     .hero-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .hero-title-2 {
-        font-size: 1.1rem;
-        margin-top: 45px;
+        font-size: 1.5rem;
+        margin: 30px 0;
     }
 
     .hero-button {
         padding: 13px 30px 15px;
-        border-radius: 18px;
+        border-radius: 27px;
         font-weight: 700;
         font-size: 1rem;
     }
@@ -1019,7 +1028,7 @@ footer.basebord {
     /* Hero */
     .hero-button {
         padding: 16px 38px 18px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 700;
     }
 
@@ -1161,5 +1170,8 @@ footer.basebord {
         padding: 10px 33px 13px;
     }
 
+    .menu-list {
+        max-width: none;
+    }
 
 }
