@@ -85,7 +85,7 @@ header .container {
     justify-content: center;
 }
 
-.otimize-logo{
+.otimize-logo {
     margin-left: auto;
     margin-right: 10px;
 }
@@ -381,7 +381,7 @@ section.hero .container {
     border: 3px solid #fff;
 }
 
-.hero-button:hover{
+.hero-button:hover {
     background-color: #240a36;
     transition-duration: .5s;
 }
@@ -399,11 +399,18 @@ section.hero .container {
     margin-left: 10px;
 }
 
-/* About-benefits */
-section.about-benefits .container {
+/* Finance Problems */
+
+.business-problems{
+    background-color: var(--clr-light-white);
+}
+section.business-problems .container {
     margin-top: -30px;
-    padding-top: 50px;
+    padding-top: 120px;
     padding-bottom: 50px;
+    display: flex;
+    column-gap: 70px;
+    flex-wrap: wrap;
 }
 
 .strategy-paragraph {
@@ -432,6 +439,52 @@ section.about-benefits .container {
     line-height: 1.5rem;
     color: var(--clr-dark-blue);
     font-weight: bolder;
+}
+
+.business-problems-image {
+    max-width: 22rem;
+    margin-top: 60px;
+}
+
+.business-problems-image img {
+    width: 100%;
+}
+
+.business-problems-title{
+    margin: 0 auto;
+}
+
+.business-problems-title h2 {
+    text-transform: uppercase;
+    color: var(--clr-dark-blue);
+    font-weight: 900;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.business-problems-details div{
+    display: flex;
+}
+
+.business-problems-details p {
+    /* max-width: 725px; */
+    color: var(--clr-dark-blue);
+    font-weight: 600;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+
+.business-problems-details span {
+    content: ' ';
+    background-image: url(../img/Layer_8_copy_4_1_.png);
+    width: 28px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 25px;
 }
 
 /* Problems */
@@ -579,7 +632,8 @@ section.our-team .container {
 }
 
 
-#inline-img, #acessorium-img {
+#inline-img,
+#acessorium-img {
     margin-top: 12%;
 }
 
@@ -966,7 +1020,7 @@ footer.basebord {
         right: 78px;
     }
 
-    /* about-benefits */
+    /* Finance Problems */
 
     .stategy-content {
         justify-content: space-between;
@@ -1021,7 +1075,7 @@ footer.basebord {
         justify-content: space-between;
     }
 
-    .btn{
+    .btn {
         display: none;
     }
 
@@ -1078,14 +1132,22 @@ footer.basebord {
         max-width: 960px;
     }
 
-    .otimize-logo{
+    .otimize-logo {
         margin-left: 0;
     }
-    
 
-    /* about-benefits */
+
+    /* Finance Problems */
     .stategy-content {
         justify-content: space-between;
+    }
+
+    .business-problems-title{
+        margin: 0;
+    }
+
+    section.business-problems .container {
+        flex-wrap: nowrap;
     }
 
     /* basebord */
