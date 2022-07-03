@@ -103,10 +103,11 @@ header .container {
     font-size: 16px;
     padding: 10px 5px;
     margin-right: 25px;
+    font-weight: 500;
 }
 
 .menu-list li a {
-    color: #cdcdcd;
+    color: #F5F5F5;
 }
 
 .menu-list li a:hover {
