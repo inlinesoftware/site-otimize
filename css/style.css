@@ -401,44 +401,21 @@ section.hero .container {
 
 /* Finance Problems */
 
-.business-problems{
+.business-problems {
     background-color: var(--clr-light-white);
 }
+
 section.business-problems .container {
     margin-top: -30px;
-    padding-top: 120px;
+    padding-top: 40px;
     padding-bottom: 50px;
     display: flex;
     column-gap: 70px;
     flex-wrap: wrap;
 }
 
-.strategy-paragraph {
-    margin-bottom: 40px;
-}
-
-.stategy-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-
-.strategy-content-details {
-    text-align: center;
-    width: 245px;
-}
-
-.strategy-img {
-    width: 100%;
-    height: 162px;
-}
-
-.strategy-paragraph-details {
-    font-size: 0.85rem;
-    line-height: 1.5rem;
-    color: var(--clr-dark-blue);
-    font-weight: bolder;
+#nossas-solucoes .container{
+    padding-top: 120px;
 }
 
 .business-problems-image {
@@ -450,8 +427,9 @@ section.business-problems .container {
     width: 100%;
 }
 
-.business-problems-title{
+.business-problems-title {
     margin: 0 auto;
+    max-width: 247px;
 }
 
 .business-problems-title h2 {
@@ -462,7 +440,7 @@ section.business-problems .container {
     text-align: center;
 }
 
-.business-problems-details div{
+.business-problems-details div {
     display: flex;
 }
 
@@ -475,10 +453,10 @@ section.business-problems .container {
 }
 
 
-.business-problems-details span {
+.business-problems-details span, #service-and-sales  span, #processes-and-structuring span {
     content: ' ';
     background-image: url(../img/Layer_8_copy_4_1_.png);
-    width: 28px;
+    width: 35px;
     height: 30px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -487,42 +465,26 @@ section.business-problems .container {
     margin-right: 25px;
 }
 
-/* Problems */
-section.problems .container {
-    padding-top: 60px;
-    padding-bottom: 80px;
+#processes-and-structuring {
+    background: rgb(33, 12, 47);
+    background: linear-gradient(180deg, rgb(52, 19, 74) 0%, rgba(62, 23, 90, 1) 35%, rgb(79, 29, 115) 100%);
 }
 
-.problems {
-    background-color: var(--clr-light-white);
+#processes-and-structuring span, #service-and-sales  span  {
+    background-image: url(../img/arrow-white.jpg);
+    transform: scale(1.2);
 }
 
-.problems .container hr {
-    margin: 3px auto 0;
+#processes-and-structuring p,
+#processes-and-structuring h2,
+#service-and-sales p,
+#service-and-sales h2 {
+    color: #F5F5F5;
 }
 
-.problems-img {
-    width: 176.8px;
-    height: 170px;
-    border-radius: 10px;
-    margin: 0 auto 20px;
-}
-
-.problems-img img {
-    margin: auto;
-    width: 100%;
-}
-
-.problems-details {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.problems-text {
-    width: 325px;
-    text-align: center;
-    margin-top: 40px;
+#service-and-sales {
+    background: rgb(28, 73, 97);
+    background: linear-gradient(0deg, rgba(28, 73, 97, 1) 0%, rgba(39, 100, 132, 1) 35%, rgba(48, 130, 172, 1) 100%);
 }
 
 
@@ -1022,9 +984,6 @@ footer.basebord {
 
     /* Finance Problems */
 
-    .stategy-content {
-        justify-content: space-between;
-    }
 
     /* depositions */
     .items.comentarios-detalhes {
@@ -1086,23 +1045,6 @@ footer.basebord {
         font-weight: 700;
     }
 
-    /* Problems */
-    .problems-img {
-        margin: 0 auto 35px;
-    }
-
-    .problems-details {
-        margin-top: 95px;
-    }
-
-    .problems-text {
-        margin-top: 25px;
-    }
-
-    .problems .container hr {
-        margin: 10px auto 40px;
-    }
-
     /* our-team */
     section.our-team .container {
         padding: 65px 15px 150px;
@@ -1138,11 +1080,8 @@ footer.basebord {
 
 
     /* Finance Problems */
-    .stategy-content {
-        justify-content: space-between;
-    }
 
-    .business-problems-title{
+    .business-problems-title {
         margin: 0;
     }
 
