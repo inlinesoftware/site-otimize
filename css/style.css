@@ -600,6 +600,38 @@ section.our-team .container {
     margin-right: 7px;
 }
 
+/* types-of-company */
+.types-of-company-img{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.types-of-company-img img{
+    width: 100%;
+}
+
+.types-of-company {
+    background: rgb(33, 12, 47);
+    background: linear-gradient(180deg, rgb(52, 19, 74) 0%, rgba(62, 23, 90, 1) 35%, rgb(79, 29, 115) 100%);
+}
+
+.types-of-company .container{
+    padding: 45px 15px 50px;
+}
+
+.types-of-company .section-title{
+    color: #F5F5F5;
+}
+
+.types-of-company  .section-title span{
+    color: #1292A0;
+}
+
+.types-of-company hr{
+    background-color: #240a3696;
+}
+
+
 /* our-clients */
 .our-clients {
     background-color: var(--clr-light-white);
@@ -1092,7 +1124,12 @@ footer.basebord {
 
     /* our-team */
     section.our-team .container {
-        padding: 65px 15px 150px;
+        padding: 65px 15px 50px;
+    }
+
+    /* types-of-company */
+    .types-of-company-img img{
+        width: auto;
     }
 
     /* materials */
