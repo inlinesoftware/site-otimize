@@ -631,6 +631,98 @@ section.our-team .container {
     background-color: #240a3696;
 }
 
+/* improvement-company */
+
+.improvement-company{
+    background: rgb(26, 68, 91);
+    background: linear-gradient(0deg, rgb(24, 61, 84) 0%, rgb(33, 85, 112) 35%, rgb(41, 112, 148) 100%);
+}
+
+.improvement-company .container{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.improvement-company .section-title{
+    color: #F5F5F5;
+}
+
+.improvement-company .section-title::first-letter{
+    font-size: 3rem;
+}
+
+.improvement-company .section-title span{
+    color: #1EC1BB;
+}
+
+.improvement-company hr{
+    background-color: #1EC1BB;
+}
+
+.improvement-company-container-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 55px;
+}
+
+.improvement-company-cards{
+    max-width: 350px;
+    margin-top: 9%;
+}
+
+
+.improvement-company-cards > div{
+    border-radius: 15px;
+    border: 5px solid #1EC1BB;
+    padding: 30px 15px 25px;
+    height: 100%;
+}
+
+.improvement-company-cards .number {
+    border-radius: 50%;
+    width: 78px;
+    height: 75px;
+    color: rgba(39, 100, 132, 1);
+    background-color: var(--clr-light-white);
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0 auto;
+    position: relative;
+    bottom: 5.5rem;
+}
+
+.improvement-company-cards .number-container{
+    height: 0;
+}
+
+.improvement-company-cards .cards-description h3 {
+    text-align: center;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.improvement-company-cards .cards-description p {
+    text-align: center;
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.improvement-company-cards .card-description-img{
+    margin: 30px auto;
+    width: 100px;
+}
+
+.improvement-company-cards .card-description-img img{
+   width: 100%;
+}
+
+
 
 /* our-clients */
 .our-clients {
@@ -1059,7 +1151,11 @@ footer.basebord {
         right: 78px;
     }
 
-    /* Finance Problems */
+    .improvement-company-cards .number{
+        width: 95px;
+        height: 90px;
+        bottom: 6.4rem;
+    }
 
 
     /* depositions */
@@ -1130,6 +1226,11 @@ footer.basebord {
     /* types-of-company */
     .types-of-company-img img{
         width: auto;
+    }
+
+    /* improvement-company */
+    .improvement-company-container-cards{
+        row-gap: 20px;
     }
 
     /* materials */
