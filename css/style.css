@@ -34,7 +34,6 @@ a:visited {
 
 img {
     display: block;
-    height: 100%;
 }
 
 hr {
@@ -416,7 +415,7 @@ section.business-problems .container {
     flex-wrap: wrap;
 }
 
-#nossas-solucoes .container{
+#nossas-solucoes .container {
     padding-top: 120px;
 }
 
@@ -455,7 +454,9 @@ section.business-problems .container {
 }
 
 
-.business-problems-details span, #service-and-sales  span, #processes-and-structuring span {
+.business-problems-details span,
+#service-and-sales span,
+#processes-and-structuring span {
     content: ' ';
     background-image: url(../img/Layer_8_copy_4_1_.png);
     width: 35px;
@@ -472,7 +473,8 @@ section.business-problems .container {
     background: linear-gradient(180deg, rgb(52, 19, 74) 0%, rgba(62, 23, 90, 1) 35%, rgb(79, 29, 115) 100%);
 }
 
-#processes-and-structuring span, #service-and-sales  span  {
+#processes-and-structuring span,
+#service-and-sales span {
     background-image: url(../img/arrow-white.jpg);
     transform: scale(1.2);
 }
@@ -492,7 +494,7 @@ section.business-problems .container {
 
 /* our-team */
 
-.our-team{
+.our-team {
     background-color: var(--clr-light-white);
 }
 
@@ -500,7 +502,7 @@ section.our-team .container {
     padding: 65px 15px 80px;
 }
 
-.our-team .section-title span{
+.our-team .section-title span {
     color: var(--clr-dark-purple);
 }
 
@@ -548,7 +550,7 @@ section.our-team .container {
     height: 21px;
 }
 
-.text-team-card{
+.text-team-card {
     display: flex;
     column-gap: 20px;
     padding: 10px;
@@ -557,37 +559,37 @@ section.our-team .container {
     margin-top: 10px;
 }
 
-.text-team-card-img{
+.text-team-card-img {
     max-width: 130px;
 }
 
-.text-team-card-img img{
+.text-team-card-img img {
     width: 100%;
     height: auto;
 }
 
-.text-team-card p{
+.text-team-card p {
     line-height: 1.7rem;
     color: var(--clr-dark-purple);
     font-weight: bold;
     font-size: 1.4rem;
 }
 
-.text-team-card span{
+.text-team-card span {
     color: var(--clr-dark-blue);
 }
 
 
-.details-team-paragraph p{
+.details-team-paragraph p {
     color: var(--clr-dark-blue);
     font-weight: 500;
 }
 
-.details-team-paragraph p:first-child{
+.details-team-paragraph p:first-child {
     margin: 10px 0 20px;
 }
 
-.our-team .hero-button{
+.our-team .hero-button {
     box-shadow: 2px 2px 18px 0px rgba(117, 117, 117, 0.649);
     margin: 40px auto 0;
     display: block;
@@ -601,12 +603,12 @@ section.our-team .container {
 }
 
 /* types-of-company */
-.types-of-company-img{
+.types-of-company-img {
     max-width: 700px;
     margin: 0 auto;
 }
 
-.types-of-company-img img{
+.types-of-company-img img {
     width: 100%;
 }
 
@@ -615,51 +617,51 @@ section.our-team .container {
     background: linear-gradient(180deg, rgb(52, 19, 74) 0%, rgba(62, 23, 90, 1) 35%, rgb(79, 29, 115) 100%);
 }
 
-.types-of-company .container{
+.types-of-company .container {
     padding: 45px 15px 50px;
 }
 
-.types-of-company .section-title{
+.types-of-company .section-title {
     color: #F5F5F5;
 }
 
-.types-of-company  .section-title span{
+.types-of-company .section-title span {
     color: #1292A0;
 }
 
-.types-of-company hr{
+.types-of-company hr {
     background-color: #240a3696;
 }
 
 /* improvement-company */
 
-.improvement-company{
+.improvement-company {
     background: rgb(26, 68, 91);
     background: linear-gradient(0deg, rgb(24, 61, 84) 0%, rgb(33, 85, 112) 35%, rgb(41, 112, 148) 100%);
 }
 
-.improvement-company .container{
+.improvement-company .container {
     padding-top: 30px;
     padding-bottom: 50px;
 }
 
-.improvement-company .section-title{
+.improvement-company .section-title {
     color: #F5F5F5;
 }
 
-.improvement-company .section-title::first-letter{
+.improvement-company .section-title::first-letter {
     font-size: 3rem;
 }
 
-.improvement-company .section-title span{
+.improvement-company .section-title span {
     color: #1EC1BB;
 }
 
-.improvement-company hr{
+.improvement-company hr {
     background-color: #1EC1BB;
 }
 
-.improvement-company-container-cards{
+.improvement-company-container-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -667,13 +669,13 @@ section.our-team .container {
     row-gap: 55px;
 }
 
-.improvement-company-cards{
+.improvement-company-cards {
     max-width: 350px;
     margin-top: 9%;
 }
 
 
-.improvement-company-cards > div{
+.improvement-company-cards>div {
     border-radius: 15px;
     border: 5px solid #1EC1BB;
     padding: 30px 15px 25px;
@@ -695,7 +697,7 @@ section.our-team .container {
     bottom: 5.5rem;
 }
 
-.improvement-company-cards .number-container{
+.improvement-company-cards .number-container {
     height: 0;
 }
 
@@ -713,101 +715,77 @@ section.our-team .container {
     font-weight: 500;
 }
 
-.improvement-company-cards .card-description-img{
+.improvement-company-cards .card-description-img {
     margin: 30px auto;
     width: 100px;
 }
 
-.improvement-company-cards .card-description-img img{
-   width: 100%;
+.improvement-company-cards .card-description-img img {
+    width: 100%;
 }
 
 
 
 /* our-clients */
 .our-clients {
-    background-color: var(--clr-light-white);
+    background: rgb(33, 12, 47);
+    background: linear-gradient(180deg, #4c1772 0%, #480e7b 35%, #460280 100%);
 }
 
 .item img {
     margin: 0 auto;
 }
 
-.our-clients .container {
-    padding: 65px 58px 180px
-}
 
 .our-clients .container {
-    padding: 40px 58px 90px;
+    padding: 10px 15px 160px
 }
 
-.our-clients .container .section-title {
-    color: var(--clr-dark-blue);
+.our-clients .section-title {
+    color: #F5F5F5;
+}
+
+.our-clients .section-title span {
+    color: #1EC1BB;
 }
 
 .our-clients .container hr {
     margin-bottom: 110px;
 }
 
-.our-clients .container .owl-theme .owl-stage-outer .owl-stage .owl-item .item {
-    max-width: 213px;
-    margin: auto;
+.container-clients {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    row-gap: 50px;
 }
 
-.carossel-clients {
-    display: flex;
+.container-clients .item {
+    max-width: 140px;
+    margin: 0 auto;
 }
 
-.clients-img {
-    width: 200px;
-}
-
-
-#inline-img,
-#acessorium-img {
-    margin-top: 12%;
-}
-
-#inline-img {
-    background-color: #f8f6f6;
-    width: 172px;
-}
-
-#inline-img img,
-#mp-img img,
-#webchange-img img,
-#sorvete-img img,
-#dhiogo-img img,
-#sabor-magico-img img {
-    width: auto;
-    height: 100%;
-}
-
-#sabor-magico-img,
-#dhiogo-img,
-#webchange-img,
-#sorvete-img,
-#mp-img {
-    height: 130px;
-    width: 152px;
-}
-
-#sorvete-img,
-#mp-img {
-    background-color: #f8f6f6;
-}
-
-#yes-img {
-    max-width: 125px;
+.container-clients .item img {
+    width: 100%;
+    max-height: 120px;
 }
 
 /* depositions */
 .depositions {
-    background-color: var(--clr-light-white);
+    background: rgb(33, 12, 47);
+    background: linear-gradient(180deg, rgb(52, 19, 74) 0%, rgba(62, 23, 90, 1) 35%, #4c1772 100%);
 }
 
 .depositions .container {
     padding: 70px 15px 60px;
+}
+
+.depositions .section-title {
+    color: #F5F5F5;
+}
+
+.depositions .section-title span {
+    color: #1EC1BB;
 }
 
 .items.comentarios-detalhes {
@@ -1151,7 +1129,7 @@ footer.basebord {
         right: 78px;
     }
 
-    .improvement-company-cards .number{
+    .improvement-company-cards .number {
         width: 95px;
         height: 90px;
         bottom: 6.4rem;
@@ -1169,6 +1147,11 @@ footer.basebord {
         width: 30px;
         left: 100%;
     }
+
+    /* our-clients */
+    .container-clients {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .aspas-img-2 {
@@ -1179,14 +1162,6 @@ footer.basebord {
 .comentarios-detalhes p {
     font-size: 1.32rem;
 }
-
-/* our-clients */
-.our-clients .container {
-    padding: 65px 15px 160px
-}
-
-
-
 
 @media (min-width: 768px) {
 
@@ -1224,14 +1199,15 @@ footer.basebord {
     }
 
     /* types-of-company */
-    .types-of-company-img img{
+    .types-of-company-img img {
         width: auto;
     }
 
     /* improvement-company */
-    .improvement-company-container-cards{
+    .improvement-company-container-cards {
         row-gap: 20px;
     }
+
 
     /* materials */
     .materials-free .container {
@@ -1271,6 +1247,7 @@ footer.basebord {
     section.business-problems .container {
         flex-wrap: nowrap;
     }
+
 
     /* basebord */
     .logo-basebord {
@@ -1320,7 +1297,7 @@ footer.basebord {
         margin-left: 40px;
     }
 
-    .details-team > div{
+    .details-team>div {
         width: 50%;
     }
 
@@ -1330,6 +1307,12 @@ footer.basebord {
         border-radius: 18px;
         padding: 10px 33px 13px;
     }
+
+    /* our-clients */
+    .container-clients {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }
 
 
@@ -1342,7 +1325,7 @@ footer.basebord {
 
     /* our-team */
 
-    .text-team-card{
+    .text-team-card {
         margin-top: 45px;
     }
 
