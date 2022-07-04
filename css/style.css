@@ -40,7 +40,7 @@ img {
 hr {
     border: none;
     height: 5px;
-    background-color: #676767;
+    background-color: #CACCD6;
     width: 80px;
     margin: 3px auto 40px;
 }
@@ -67,6 +67,8 @@ button {
     margin: 0 auto;
     text-align: center;
     color: var(--clr-dark-blue);
+    text-transform: uppercase;
+    font-family: 'Biko', sans-serif;
 }
 
 
@@ -391,8 +393,8 @@ section.hero .container {
     display: inline-block;
     background-image: url("../img/Icon\ ionic-md-send.png");
     background-size: 100%;
-    width: 15px;
-    height: 18px;
+    width: 21px;
+    height: 23px;
     background-repeat: no-repeat;
     position: relative;
     top: 6px;
@@ -489,8 +491,17 @@ section.business-problems .container {
 
 
 /* our-team */
+
+.our-team{
+    background-color: var(--clr-light-white);
+}
+
 section.our-team .container {
-    padding: 65px 0px 80px;
+    padding: 65px 15px 80px;
+}
+
+.our-team .section-title span{
+    color: var(--clr-dark-purple);
 }
 
 .details-team {
@@ -501,7 +512,6 @@ section.our-team .container {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;
-    margin: 0 15px;
     height: 0;
     overflow: hidden;
 }
@@ -523,29 +533,14 @@ section.our-team .container {
     height: 100%;
 }
 
-.text-team {
-    margin: 0 15px;
-}
-
 .title-team {
     color: var(--clr-dark-blue);
     max-width: 530px;
     font-size: 1.6rem;
     font-weight: 799;
-    margin: 40px 0 60px;
+    margin: 40px 0 50px;
 }
 
-
-.paragraph-team {
-    margin-top: 15px;
-    color: black;
-    font-size: 1rem;
-    line-height: 1.5em;
-}
-
-.text-team .hero-button {
-    margin-top: 65px;
-}
 
 
 .text-team .icon {
@@ -553,7 +548,57 @@ section.our-team .container {
     height: 21px;
 }
 
+.text-team-card{
+    display: flex;
+    column-gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E5E7F3;
+    margin-top: 10px;
+}
 
+.text-team-card-img{
+    max-width: 130px;
+}
+
+.text-team-card-img img{
+    width: 100%;
+    height: auto;
+}
+
+.text-team-card p{
+    line-height: 1.7rem;
+    color: var(--clr-dark-purple);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.text-team-card span{
+    color: var(--clr-dark-blue);
+}
+
+
+.details-team-paragraph p{
+    color: var(--clr-dark-blue);
+    font-weight: 500;
+}
+
+.details-team-paragraph p:first-child{
+    margin: 10px 0 20px;
+}
+
+.our-team .hero-button{
+    box-shadow: 2px 2px 18px 0px rgba(117, 117, 117, 0.649);
+    margin: 40px auto 0;
+    display: block;
+    max-width: 460px;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.our-team .hero-button a {
+    margin-right: 7px;
+}
 
 /* our-clients */
 .our-clients {
@@ -929,7 +974,7 @@ footer.basebord {
     }
 
     .section-title {
-        font-size: 2em;
+        font-size: 2.2em;
         max-width: 1050px;
     }
 
@@ -1120,16 +1165,15 @@ footer.basebord {
     .video-team {
         padding-bottom: 37.25%;
         margin: 0 auto;
-        width: 54%;
         max-width: 690px;
         min-height: 460px;
+        margin: 0 15px;
     }
 
     .title-team {
         max-width: 530px;
         font-size: 2.3rem;
         font-weight: 799;
-        margin-bottom: 75px;
         margin-top: 0;
     }
 
@@ -1138,15 +1182,11 @@ footer.basebord {
         margin-left: 40px;
     }
 
-    .strategy-paragraph-details {
-        font-size: 1.15rem;
-        line-height: 1.5rem;
-        color: var(--clr-dark-blue);
-        font-weight: bolder;
+    .details-team > div{
+        width: 50%;
     }
 
     .text-team .hero-button {
-        margin-top: 14px;
         margin-left: 0;
         font-size: 1.3em;
         border-radius: 18px;
@@ -1163,8 +1203,12 @@ footer.basebord {
     }
 
     /* our-team */
+
+    .text-team-card{
+        margin-top: 45px;
+    }
+
     .text-team .hero-button {
-        margin-top: 82px;
         margin-left: 0;
         font-size: 1.3em;
         border-radius: 18px;
