@@ -724,6 +724,36 @@ section.our-team .container {
     width: 100%;
 }
 
+/* management-model-img */
+
+.management-model-img {
+    margin: 0 auto;
+}
+
+.management-model-img img {
+    width: 100%;
+}
+
+.management-model {
+    background-color: var(--clr-light-white);
+}
+
+.management-model .container {
+    padding: 45px 15px 110px;
+}
+
+.management-model .section-title {
+    color: var(--clr-dark-blue);
+}
+
+.management-model .section-title span {
+    color: var(--clr-dark-purple);
+}
+
+.management-model hr {
+    background-color: #240a3696;
+}
+
 
 
 /* our-clients */
@@ -777,7 +807,7 @@ section.our-team .container {
 }
 
 .depositions .container {
-    padding: 70px 15px 60px;
+    padding: 50px 15px 60px;
 }
 
 .depositions .section-title {
@@ -1318,7 +1348,7 @@ footer.basebord {
 
     /* otimize-in-media */
     .otimize-in-media  .container {
-        padding: 60px 0;
+        padding: 60px 0 80px;
     }
 
     .otimize-in-media  .container .owl-theme .owl-dots .owl-dot span {
