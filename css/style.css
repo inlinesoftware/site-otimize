@@ -337,6 +337,7 @@ header .container {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.83);
     background-blend-mode: color;
+    background-position-y: initial;
     overflow: hidden;
 }
 
@@ -407,7 +408,7 @@ section.hero .container {
 }
 
 .business-problems .section-title span{
-    color: #1EC1BB;
+    color: var(--clr-dark-purple);
 }
 
 section.business-problems .container {
