@@ -1231,12 +1231,13 @@ footer.basebord {
 
     /* Hero */
     .hero-title {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
     }
 
     .hero-title-2 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin: 30px 0;
+        line-height: 3rem;
     }
 
     .hero-button {
