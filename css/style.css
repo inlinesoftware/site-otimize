@@ -801,7 +801,25 @@ section.our-team .container {
 .container-clients .item img {
     width: 100%;
     max-height: 130px;
+    filter: grayscale(105%);
 }
+
+#acessorium-img{
+    filter: grayscale(105%) contrast(0.5);
+}
+
+#doce-amarelo-img{
+    filter: grayscale(105%) contrast(0.5);
+}
+
+.container-clients .item img:hover, #doce-amarelo-img:hover, #acessorium-img:hover {
+    width: 100%;
+    max-height: 130px;
+    filter: none !important;
+    transition-duration: .5s;
+}
+
+
 
 /* depositions */
 .depositions {
