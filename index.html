@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.theme.default.min.css">
+    <link href="lib/aos/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,10 +99,10 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-container">
-                <h1 class="hero-title">Otimize Gestão Empresarial</h1>
-                <h2 class="hero-title-2">Ajudamos você a acabar com o caos na sua empresa! <br> Com uma forma de gestão
+                <h1 data-aos="fade-down" class="hero-title">Otimize Gestão Empresarial</h1>
+                <h2 data-aos="fade-down" data-aos-delay="400" class="hero-title-2">Ajudamos você a acabar com o caos na sua empresa! <br> Com uma forma de gestão
                     eficiente, lucrativa e totalmente personalizada!</h2>
-                <button onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')"
+                <button style="display: block;" data-aos="fade-down" data-aos-delay="600" onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')"
                     class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Quero salvar minha
                         empresa!</a>
                     <div class="icon"></div>
@@ -122,13 +123,13 @@
         <h2 class="section-title">Você se<span> identifica</span> com alguns desses <span>desafios?</span></h2>
         <hr>
         <div class="container">
-            <div class="business-problems-title">
+            <div data-aos="fade-right" data-aos-delay="50" class="business-problems-title aos-init aos-animate">
                 <h2>Financeiro</h2>
                 <div class="business-problems-image">
                     <img src="img/financeiro.png" alt="Financeiro">
                 </div>
             </div>
-            <div class="business-problems-details">
+            <div data-aos="fade-right" data-aos-delay="50" class="business-problems-details aos-init aos-animate">
                 <div>
                     <span></span>
                     <p>Não vejo nem <strong>a cor do dinheiro</strong> no caixa da minha empresa </p>
@@ -164,13 +165,13 @@
     <!-- processes-and-structuring -->
     <section class="business-problems" id="processes-and-structuring">
         <div class="container">
-            <div class="business-problems-title">
+            <div data-aos="fade-left" data-aos-delay="50" class="business-problems-title">
                 <h2>Processos e estruturação</h2>
                 <div class="business-problems-image">
                     <img src="img/6890342-removebg-preview.png" alt="Financeiro">
                 </div>
             </div>
-            <div class="business-problems-details">
+            <div data-aos="fade-left" data-aos-delay="50" class="business-problems-details">
                 <div>
                     <span></span>
                     <p>Passo a maior parte do tempo no operacional da minha empresa </p>
@@ -199,13 +200,13 @@
     <!-- service-and-sales -->
     <section class="business-problems" id="service-and-sales">
         <div class="container">
-            <div class="business-problems-title">
+            <div data-aos="fade-right" data-aos-delay="50" class="business-problems-title">
                 <h2>Atendimento e vendas</h2>
                 <div class="business-problems-image">
                     <img src="img/6844163-removebg-preview.png" alt="Financeiro">
                 </div>
             </div>
-            <div class="business-problems-details">
+            <div data-aos="fade-right" data-aos-delay="50" class="business-problems-details">
                 <div>
                     <span></span>
                     <p>Aparecem pessoas interessadas, mas não consigo fechar as vendas</p>
@@ -238,7 +239,7 @@
         <div class="container">
             <h2 class="section-title">Conheça nosso <span>time de especialistas</span></h2>
             <hr>
-            <div class="details-team">
+            <div data-aos="flip-left" class="details-team">
                 <div>
                     <div class="video-team">
                         <video title="Video Time Otimize" src="video/VideoOtimize.mp4" poster="./video/Foto.jpeg"
@@ -274,7 +275,7 @@
                     </div>
                 </div>
             </div>
-            <button onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')"
+            <button data-aos="zoom-in" onclick="return gtag_report_conversion('https://api.whatsapp.com/message/WU5WDN55QQX5B1')"
                 class="hero-button"><a href="https://api.whatsapp.com/message/WU5WDN55QQX5B1">Fale com nosso
                     time</a>
                 <div class="icon"></div>
@@ -288,7 +289,7 @@
         <div class="container">
             <h2 class="section-title">Essa consultoria <span>atende</span> a quais <span>tipos de empresa?</span></h2>
             <hr>
-            <div class="types-of-company-img">
+            <div data-aos="zoom-in" data-aos-delay="300" class="types-of-company-img">
                 <img src="img/types-of-company.png" alt="Tipos de compania">
             </div>
         </div>
@@ -301,7 +302,7 @@
             <h2 class="section-title"><span>5 - Melhorias</span> que iremos realizar em<span> sua empresa</span></h2>
             <hr>
             <div class="improvement-company-container-cards">
-                <div class="improvement-company-cards">
+                <div data-aos="zoom-in-up" data-aos-delay="50" class="improvement-company-cards">
                     <div>
                         <div class="number-container">
                             <span class="number">1</span>
@@ -321,7 +322,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="improvement-company-cards">
+                <div data-aos="zoom-in-up" data-aos-delay="150" class="improvement-company-cards">
                     <div>
                         <div class="number-container">
                             <span class="number">2</span>
@@ -340,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="improvement-company-cards">
+                <div data-aos="zoom-in-up" data-aos-delay="250" class="improvement-company-cards">
                     <div>
                         <div class="number-container">
                             <span class="number">3</span>
@@ -359,7 +360,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="improvement-company-cards">
+                <div data-aos="zoom-in-up" data-aos-delay="250" class="improvement-company-cards">
                     <div>
                         <div class="number-container">
                             <span class="number">4</span>
@@ -378,7 +379,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="improvement-company-cards">
+                <div data-aos="zoom-in-up" data-aos-delay="350" class="improvement-company-cards">
                     <div>
                         <div class="number-container">
                             <span class="number">5</span>
@@ -408,7 +409,7 @@
         <div class="container">
             <h2 class="section-title">Como vamos <span>implantar</span> um modelo de <span>gestão eficiente?</span></h2>
             <hr>
-            <div class="management-model-img">
+            <div data-aos="flip-left" data-aos-delay="100" class="management-model-img">
                 <img src="img/management-model.png" alt="Tipos de compania">
             </div>
         </div>
@@ -421,7 +422,7 @@
             <h2 class="section-title">O que nossos <span>clientes dizem</span></h2>
             <hr>
             <div id="two" class="owl-carousel owl-theme comentarios">
-                <div class="items comentarios-detalhes">
+                <div data-aos="zoom-in" data-aos-delay="200" class="items comentarios-detalhes">
                     <div class="aspas-img-1"><img src="img/aspas01.png" alt="aspas-duplas"></div>
                     <p>Então, sobre a consultoria, estou gostando bastante. É como se fosse uma luz no fim do túnel.
                         Veio como uma esperança para dias difíceis. Estou aprendendo a colocar preços nos produtos e
@@ -433,7 +434,7 @@
                     <p class="paragraph-author">Amanda</p>
                     <p>Proprietária Sorvete no Palito</p>
                 </div>
-                <div class="items comentarios-detalhes">
+                <div data-aos="zoom-in" data-aos-delay="200" class="items comentarios-detalhes">
                     <div class="aspas-img-1"><img src="img/aspas01.png" alt="aspas-duplas"></div>
                     <p>Participar da consultoria da equipe da Otimize me ajudou a gerenciar minha empresa de maneira
                         mais eficiente e eficaz. Antes, eu passava a maior parte do meu tempo no operacional da Sabor
@@ -452,7 +453,7 @@
         <div class="container">
             <h2 class="section-title">Empresas que já <span>cresceram</span> com a otimize</h2>
             <hr>
-            <div class="container-clients">
+            <div data-aos="flip-left" data-aos-delay="200" class="container-clients">
                 <div id="inline-img" class="item"><img src="img/logos_clients/inline.png" alt="Cliente"></div>
                 <div id="mp-img" class="item"><img src="img/logos_clients/mp_importados.png" alt="Mp Importados"></div>
                 <div id="webchange-img" class="item"><img src="img/logos_clients/web_change.png" alt="Web change">
@@ -475,12 +476,12 @@
     <!-- our-clients end -->
 
     <!-- otimize-in-media -->
-    <section class="otimize-in-media" id="materiais">
+    <section  class="otimize-in-media" id="materiais">
         <div class="container">
             <h2 class="section-title">Otimize na <span>mídia</span></h2>
             <hr>
             <div id="three" class="owl-carousel owl-theme otimize-in-media-container">
-                <div class="items otimize-in-media-details">
+                <div data-aos="fade-left" data-aos-delay="200" class="items otimize-in-media-details">
                     <ul class="tags">
                         <li>
                             <p>Otimize na Mídia</p>
@@ -497,7 +498,7 @@
                             target="_blank">Saber
                             Mais</a></button>
                 </div>
-                <div class="items otimize-in-media-details">
+                <div data-aos="fade-left" data-aos-delay="200" class="items otimize-in-media-details">
                     <ul class="tags">
                         <li>
                             <p>Otimize na Mídia</p>
@@ -524,7 +525,7 @@
         <div class="container">
             <h2 class="section-title">Materiais <span>Gratuitos</span></h2>
             <hr>
-            <div class="materials-container">
+            <div data-aos="fade-right" data-aos-delay="200" class="materials-container">
                 <div class="materials-details">
                     <div class="materials-img">
                         <img src="img/articles_img/1634239381683.jpg" alt="Material-gratuito">
@@ -678,6 +679,11 @@
                 }
             });
         });
+    </script>
+    <!-- AOS Animate On Scroll Library -->
+    <script src="lib/aos/aos.js"></script>
+    <script>
+        AOS.init({duration: 1200});
     </script>
 
 </body>

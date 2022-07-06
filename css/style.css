@@ -354,7 +354,7 @@ section.hero .container {
 }
 
 .hero-container .hero-button {
-    margin: 20px 10px;
+    margin: 20px auto;
 }
 
 .hero-title {
@@ -383,8 +383,13 @@ section.hero .container {
 }
 
 .hero-button:hover {
-    background-color: #240a36;
-    transition-duration: .5s;
+    background-color: #340f4f;
+    transition-duration: .1s;
+    transform: scale(1.12) !important;
+}
+
+.hero-button:active {
+    background-color: #230b34;
 }
 
 
@@ -630,12 +635,9 @@ section.our-team .container {
 }
 
 .types-of-company .section-title span {
-    color: #1292A0;
+    color: #1EC1BB;
 }
 
-.types-of-company hr {
-    background-color: #240a3696;
-}
 
 /* improvement-company */
 
@@ -1270,11 +1272,11 @@ footer.basebord {
     }
 
     .hero-container .hero-button {
-        margin: 31px;
+        margin: 31px auto;
     }
 
     .hero-container {
-        padding-top: 120px;
+        padding-top: 20px;
     }
 
     /* Button whatssapp */
