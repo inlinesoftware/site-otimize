@@ -358,7 +358,7 @@ section.hero .container {
 }
 
 .hero-title {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 900;
     color: #F5F5F5;
     text-shadow: 4px 0px 7px #000000;
@@ -374,7 +374,7 @@ section.hero .container {
 
 .hero-button {
     background-color: var(--clr-dark-purple);
-    padding: 7px 22px 12px;
+    padding: 5px 22px 12px;
     border-radius: 15px;
     font-weight: bold;
     font-size: 0.8rem;
@@ -447,7 +447,7 @@ section.business-problems .container {
     text-transform: uppercase;
     color: var(--clr-dark-blue);
     font-weight: 900;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: center;
 }
 
