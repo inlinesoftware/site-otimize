@@ -696,35 +696,35 @@
             <form class="form" action="">
                 <div class="form-fields">
                     <label for="">Para começarmos, informe abaixo o seu <span>nome completo</span>:</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" required >
                 </div>
                 <div class="form-fields">
                     <label for="">Qual o seu melhor <span>e-mail</span>?</span></label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" required>
                 </div>
                 <div class="form-fields">
                     <label for="">Agora informe seu <span>Telefone</span> de contato que tenha
                         WhatsApp</span>?</span></label>
                     <input type="text" name="telefone" id="telefone"
-                        maxlength="15" />
+                        maxlength="15" required />
                 </div>
                 <div class="form-fields">
                     <label for="">Agora que já temos seus dados, me conta, qual o <span>Nome da sua
                             empresa?</span></span></label>
-                    <input type="text" name="company-name">
+                    <input type="text" name="company-name" required>
                 </div>
                 <div class="form-fields">
                     <label for="">Qual a <span>quantidade de funcionários</span> você tem hoje?(tirando os
                         sócios)</label>
-                    <input type="number" min="1" name="number-employees">
+                    <input type="number" min="1" name="number-employees" required>
                 </div>
                 <div class="form-fields">
                     <label for="">Estamos quase lá... me fale a faixa de <span>faturamento mensal</span> da sua
                         empresa?</label>
-                    <input type="text" name="invoicing" onInput="mascaraMoeda(event);">
+                    <input type="text" name="invoicing" onInput="mascaraMoeda(event);" required>
                 </div>
                 <div>
-                    <input type="checkbox" name="accept-terms" id="accept-terms">
+                    <input type="checkbox" name="accept-terms" id="accept-terms" required>
                     <label class="accept-terms" for="accept-terms">
                         De acordo com as Leis 12.965/2014 e 13.709/2018, que regulam o uso da intenet e o tratamento de
                         dados pessoais no Brasil, autorizo a Otimize Gestão Empresarial a enviar notificações por e-mail
