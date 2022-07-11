@@ -1329,7 +1329,7 @@ section.our-team .container {
     border: 1px solid #888;
     max-width: 720px;
     height: 380px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
