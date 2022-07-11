@@ -1244,8 +1244,14 @@ section.our-team .container {
 
 /* form leeds */
 .form-leeds{
-    background-color: var(--clr-light-white);
+    background-color: #edeffb9c;
     padding: 40px 0 80px;
+    background: no-repeat center url(../img/image-min.jpg);
+    background-size: cover;
+    background-color: #edeffbcc;
+    background-blend-mode: lighten;
+    background-position-y: initial;
+    overflow: hidden;
 }
 
 .form-leeds .section-title{
@@ -1279,12 +1285,14 @@ section.our-team .container {
     color: var(--clr-dark-blue);
     font-weight: 600;
     font-size: 1rem;
+    text-shadow: -1px 0px 5px #ffffff;
 }
 
 .form-fields label span{
     text-transform: uppercase;
     color: var(--clr-dark-purple);
     font-weight: 700;
+    text-shadow: none;
 }
 
 .form .hero-button{
