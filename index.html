@@ -104,8 +104,8 @@
                     sua empresa! <br> Com uma forma de gestão
                     eficiente, lucrativa e totalmente personalizada!</h2>
                 <button style="display: block;" data-aos="fade-down" data-aos-delay="600"
-                    onclick="return gtag_report_conversion('#formulario-de-atendimento')"
-                    class="hero-button"><a href="#formulario-de-atendimento">Quero salvar minha
+                    onclick="return gtag_report_conversion('#formulario-de-atendimento')" class="hero-button"><a
+                        href="#formulario-de-atendimento">Quero salvar minha
                         empresa!</a>
                     <div class="icon"></div>
                 </button>
@@ -277,8 +277,7 @@
                     </div>
                 </div>
             </div>
-            <button data-aos="zoom-in"
-                onclick="return gtag_report_conversion('#formulario-de-atendimento')"
+            <button data-aos="zoom-in" onclick="return gtag_report_conversion('#formulario-de-atendimento')"
                 class="hero-button"><a href="#formulario-de-atendimento">Fale com nosso
                     time</a></a>
                 <div class="icon"></div>
@@ -690,13 +689,14 @@
     <!-- material-free -->
     <section class="form-leeds" id="materiais">
         <div class="container">
-            <h2 id="formulario-de-atendimento" class="section-title">Preencha o formulário para ser <span>atendido</span> por nossos
+            <h2 id="formulario-de-atendimento" class="section-title">Preencha o formulário para ser
+                <span>atendido</span> por nossos
                 <span>especialistas</span></h2>
             <hr>
-            <form class="form" action="">
+            <form class="form" id="form" action="">
                 <div class="form-fields">
                     <label for="">Para começarmos, informe abaixo o seu <span>nome completo</span>:</label>
-                    <input type="text" name="name" required >
+                    <input type="text" name="name" required>
                 </div>
                 <div class="form-fields">
                     <label for="">Qual o seu melhor <span>e-mail</span>?</span></label>
@@ -705,8 +705,7 @@
                 <div class="form-fields">
                     <label for="">Agora informe seu <span>Telefone</span> de contato que tenha
                         WhatsApp</span>:</span></label>
-                    <input type="text" name="telefone" id="telefone"
-                        maxlength="15" required />
+                    <input type="text" name="telefone" id="telefone" maxlength="15" required />
                 </div>
                 <div class="form-fields">
                     <label for="">Agora que já temos seus dados, me conta, qual o <span>Nome da sua
@@ -739,8 +738,23 @@
     </section>
     <!-- material-free end -->
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Agradecemos a sua confiança.</h3>
+            <p>Em breve um de nossos <span>especialistas</span> irá entrar em <span>contato</span> com você!</p>
+            <div class="logo-modal">
+                <img src="img/otimize.png" alt="otimize">
+            </div>
+        </div>
+
+    </div>
+
     <!-- basebord -->
-    <footer class="basebord" id="contato">
+    <footer id="contato" class="basebord">
         <div class="container">
             <div class="info-basebord">
                 <a href="#home"><img class="logo-basebord" src="img/otimize.png" alt="Otimize-logo"></a>
