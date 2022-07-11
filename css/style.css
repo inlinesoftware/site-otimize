@@ -1244,11 +1244,10 @@ section.our-team .container {
 
 /* form leeds */
 .form-leeds{
-    background-color: #edeffb9c;
     padding: 40px 0 80px;
     background: no-repeat center url(../img/image-min.jpg);
     background-size: cover;
-    background-color: #edeffbcc;
+    background-color: #edeffbb3;
     background-blend-mode: lighten;
     background-position-y: initial;
     overflow: hidden;
