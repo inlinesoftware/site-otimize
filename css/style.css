@@ -1247,7 +1247,7 @@ section.our-team .container {
     padding: 40px 0 80px;
     background: no-repeat center url(../img/image-min.jpg);
     background-size: cover;
-    background-color: #edeffbb3;
+    background-color: #edeffbdb;
     background-blend-mode: lighten;
     background-position-y: initial;
     overflow: hidden;
@@ -1307,7 +1307,7 @@ section.our-team .container {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -1327,8 +1327,12 @@ section.our-team .container {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    max-width: 400px;
+    max-width: 720px;
+    height: 380px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   /* The Close Button */
@@ -1356,7 +1360,7 @@ section.our-team .container {
   }
 
   .modal-content p{
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     line-height: 1.5em !important;
   }
 
@@ -1367,10 +1371,11 @@ section.our-team .container {
 
   .modal-content h3{
     margin-bottom: 25px;
+    font-size: 2rem;
   }
 
   .logo-modal{
-    max-width: 180px;
+    max-width: 270px;
     margin: 10px auto 0;
   }
 
