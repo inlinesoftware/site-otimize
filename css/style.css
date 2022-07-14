@@ -332,7 +332,7 @@ header .container {
 
 /* Hero */
 .hero {
-    background: no-repeat center url(../img/imagem-principal.jpg);
+    background: no-repeat center url(../img/imagem-principal-mobile.jpg);
     height: 550px;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.83);
@@ -1245,7 +1245,7 @@ section.our-team .container {
 /* form leeds */
 .form-leeds{
     padding: 40px 0 80px;
-    background: no-repeat center url(../img/image-min.jpg);
+    background: no-repeat center url(../img/image-form-mobile.jpg);
     background-size: cover;
     background-color: #edeffbdb;
     background-blend-mode: lighten;
@@ -1503,6 +1503,14 @@ footer.basebord {
     }
 
     /* Hero */
+
+    .hero{
+        background: no-repeat center url(../img/imagem-principal.jpg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.83);
+        background-blend-mode: color;
+        background-position-y: initial;
+    }
     .hero-title {
         font-size: 3.5rem;
     }
@@ -1566,6 +1574,15 @@ footer.basebord {
     .materials-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr)
+    }
+    /* form-leeds */
+
+    .form-leeds{
+        background: no-repeat center url(../img/image-min.jpg);
+        background-size: cover;
+        background-color: #edeffbdb;
+        background-blend-mode: lighten;
+        background-position-y: initial;
     }
 }
 
