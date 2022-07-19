@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.theme.default.min.css">
     <link href="lib/aos/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Widget do selo do Calendly - início -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <!-- Google Fonts Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -417,7 +419,7 @@
                 <picture>
                     <source media="(min-width:576px)" srcset="img/management-model.png">
                     <img src="img/management-model-mobile.png" alt="Tipos de compania">
-                  </picture>
+                </picture>
             </div>
         </div>
     </section>
@@ -864,6 +866,19 @@
             });
         });
     </script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/matthausmmc/60min?background_color=edeffb&text_color=276484&primary_color=3e175a',
+                text: 'Agende um Horário!',
+                color: '#3E175A',
+                textColor: '#FFFFFF',
+                branding: true
+            });
+        }
+    </script>
+    <!-- Widget do selo do Calendly - fim -->
     <!-- AOS Animate On Scroll Library -->
     <script src="lib/aos/aos.js"></script>
     <script>

@@ -1663,7 +1663,7 @@ footer.basebord {
 
     /* types-of-company */
     .types-of-company-img img {
-        width: auto;
+        max-width: min-content;
     }
 
     /* improvement-company */
