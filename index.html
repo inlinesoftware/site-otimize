@@ -20,6 +20,10 @@
         .calendly-badge-widget {
             right: 90px !important;
         }
+
+        .calendly-badge-widget .calendly-badge-content span {
+            display: none !important;
+        }
     </style>
     <!-- end left align the badge widget -->
     <!-- Google Fonts Open Sans -->
@@ -873,13 +877,14 @@
             });
         });
     </script>
+
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script type="text/javascript">
         window.onload = function () {
             Calendly.initBadgeWidget({
-                url: 'https://calendly.com/matthausmmc/60min?background_color=edeffb&text_color=276484&primary_color=3e175a',
+                url: 'https://calendly.com/otimizege/60min?background_color=edeffb&text_color=276484&primary_color=3e175a',
                 text: 'Agende um Horário!',
-                color: '#3E175A',
+                color: '#1EC1BC',
                 textColor: '#FFFFFF',
                 branding: true
             });
