@@ -46,21 +46,6 @@
         gtag('js', new Date());
         gtag('config', 'AW-340230055');
     </script>
-    <!-- Event snippet for Contato conversion page -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-340230055/QlYnCPK-6JADEKf_naIB',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
     <!-- Event snippet for formulário de lead conversion page -->
     <script>
         gtag('event', 'conversion', {
@@ -145,8 +130,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <h2 data-aos="fade-down" data-aos-delay="400" class="hero-title-2">Ajudamos você a acabar com o caos na
                     sua empresa! <br> Com uma forma de gestão
                     eficiente, lucrativa e totalmente personalizada!</h2>
-                <button style="display: block;" data-aos="fade-down" data-aos-delay="600"
-                    onclick="return gtag_report_conversion('#formulario-de-atendimento')" class="hero-button"><a
+                <button style="display: block;" data-aos="fade-down" data-aos-delay="600" class="hero-button"><a
                         href="#formulario-de-atendimento">Quero salvar minha
                         empresa!</a>
                     <div class="icon"></div>
@@ -319,8 +303,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </div>
                 </div>
             </div>
-            <button data-aos="zoom-in" onclick="return gtag_report_conversion('#formulario-de-atendimento')"
-                class="hero-button"><a href="#formulario-de-atendimento">Fale com nosso
+            <button data-aos="zoom-in" class="hero-button"><a href="#formulario-de-atendimento">Fale com nosso
                     time</a></a>
                 <div class="icon"></div>
             </button>
@@ -789,11 +772,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <!-- Modal content -->
         <div class="modal-content">
             <div>
-                <button
-                    onclick="return goog_report_conversion ('https://www.otimizeempresas.com.br/#formulario-de-atendimento')"
-                    type="submit" data-aos="zoom-in" class="hero-button">Quero ser atendido
-                    <span class="close">&times;</span>
-                    <h3>Agradecemos a sua confiança.</h3>
+                <span class="close">&times;</span>
+                <h3>Agradecemos a sua confiança.</h3>
             </div>
             <p>Em breve um de nossos <span>especialistas</span> irá entrar em <span>contato</span> com você!</p>
             <div class="logo-modal">
