@@ -46,12 +46,6 @@
         gtag('js', new Date());
         gtag('config', 'AW-340230055');
     </script>
-    <!-- Event snippet for formulário de lead conversion page -->
-    <script>
-        gtag('event', 'conversion', {
-            'send_to': 'AW-340230055/emmUCJa6ms8DEKf_naIB'
-        });
-    </script>
     <!-- Event snippet for Lead botão WhatsApp conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
@@ -63,22 +57,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             };
             gtag('event', 'conversion', {
                 'send_to': 'AW-340230055/jBEECMG4ms8DEKf_naIB',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
-    <!-- Event snippet for Agendar horário conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-340230055/JaG0CODyms8DEKf_naIB',
                 'event_callback': callback
             });
             return false;
