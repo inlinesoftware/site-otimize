@@ -1478,10 +1478,15 @@ footer.basebord {
     margin-bottom: 10px;
 }
 
-.contactos-basebord-container img {
+.contactos-basebord-container img, .contactos-basebord-container svg {
     width: 14px;
     height: 100%;
     margin-right: 5px;
+    color: #fff;
+}
+
+#image-city{
+    width: 20px;
 }
 
 .copy {
