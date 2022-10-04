@@ -961,15 +961,24 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <script async src="lib/index.js"></script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script type="text/javascript">
-        window.onload = function () {
-            Calendly.initBadgeWidget({
+        window.onload = async function () {
+          await  Calendly.initBadgeWidget({
                 url: 'https://calendly.com/otimizege/60min?background_color=edeffb&text_color=276484&primary_color=3e175a',
                 text: 'Agende um Horário!',
                 color: '#1EC1BC',
                 textColor: '#FFFFFF',
                 branding: true
             });
-            
+
+            const calendlyWidget = document.getElementsByClassName('calendly-badge-widget')[0]
+
+            console.log(calendlyWidget)
+
+            calendlyWidget.addEventListener('click', () => {
+                // Para agendamento
+                fbq('track', 'Schedule')
+            })
+
             id('telefone').onkeyup = function () {
                 mascara(this, mtel)
             }
