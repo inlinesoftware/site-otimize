@@ -974,6 +974,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1224283531474857');
         fbq('track', 'PageView');
+        // Para o formulário de lead:
+        fbq('track', 'Lead');
+        // Para agendamento
+        fbq('track', 'Schedule');
+        // Para contato whatsap
+        fbq('track', 'Contact');
     </script>
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1224283531474857&ev=PageView&noscript=1" /></noscript>
