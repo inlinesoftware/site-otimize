@@ -961,23 +961,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <script async src="lib/index.js"></script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script type="text/javascript">
-        window.onload = async function () {
-          await  Calendly.initBadgeWidget({
+        window.onload = function () {
+            Calendly.initBadgeWidget({
                 url: 'https://calendly.com/otimizege/60min?background_color=edeffb&text_color=276484&primary_color=3e175a',
                 text: 'Agende um Horário!',
                 color: '#1EC1BC',
                 textColor: '#FFFFFF',
                 branding: true
             });
-
-            const calendlyWidget = document.getElementsByClassName('calendly-badge-widget')[0]
-
-            console.log(calendlyWidget)
-
-            calendlyWidget.addEventListener('click', () => {
-                // Para agendamento
-                fbq('track', 'Schedule')
-            })
 
             id('telefone').onkeyup = function () {
                 mascara(this, mtel)
@@ -995,7 +986,31 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1224283531474857&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
+    <script>
+        setTimeout(() => {
+            const formWhatsapp = document.getElementById("rd-button-l1jpanuf")
 
+            console.log(formWhatsapp)
+
+            formWhatsapp.addEventListener('click', () => {
+                // Para contato whatsap
+                fbq('track', 'Contact')
+            })
+
+        }, 7000)
+
+        setTimeout(() => {
+            const calendlyWidget = document.getElementsByClassName('calendly-badge-widget')[0]
+
+            console.log(calendlyWidget)
+
+            calendlyWidget.addEventListener('click', () => {
+                // Para agendamento
+                fbq('track', 'Schedule')
+            })
+            
+        }, 7000)
+    </script>
 </body>
 
 </html>
