@@ -126,13 +126,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         fbq('init', '1224283531474857');
         fbq('track', 'PageView');
     </script>
-    <!-- <script>
-        // Para agendamento
-        fbq('track', 'Schedule');
-        // Para contato whatsap
-        fbq('track', 'Contact');
-    </script> -->
-
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1224283531474857&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
     <title>Otimize Gestão Empresarial</title>
 </head>
 
@@ -183,9 +179,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-container">
-                <h1 data-aos="fade-down" class="hero-title">Otimize Consultoria Empresarial</h1>
-                <h2 data-aos="fade-down" data-aos-delay="400" class="hero-title-2">Ajudamos você a acabar com o caos na
-                    sua empresa! <br> Com uma forma de gestão
+                <h1 data-aos="fade-down" class="hero-title">Ajudamos você a acabar com o caos na sua empresa!</h1>
+                <h2 data-aos="fade-down" data-aos-delay="400" class="hero-title-2">Com uma forma de gestão
                     eficiente, lucrativa e totalmente personalizada!</h2>
                 <button style="display: block;" data-aos="fade-down" data-aos-delay="600" class="hero-button"><a
                         href="#formulario-de-atendimento">QUERO SER LUCRATIVO!</a>
@@ -241,6 +236,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             de decisões importantes</strong>
                     </p>
                 </div>
+                <button data-aos="zoom-in" class="hero-button"><a href="#formulario-de-atendimento">
+                        PRECISO ORGANIZAR O MEU FINANCEIRO!</a></a>
+                    <div class="icon"></div>
+                </button>
             </div>
         </div>
     </section>
@@ -276,6 +275,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <span></span>
                     <p>Sinto que fico lidando com os mesmos problemas o tempo todo </p>
                 </div>
+                <button data-aos="zoom-in" class="hero-button"><a href="#formulario-de-atendimento">
+                        PRECISO DE PROCESSOS NA MINHA EMPRESA!</a></a>
+                    <div class="icon"></div>
             </div>
         </div>
     </section>
@@ -312,6 +314,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <span></span>
                     <p>Não consigo fidelizar meus clientes</p>
                 </div>
+                <button data-aos="zoom-in" class="hero-button"><a href="#formulario-de-atendimento">
+                        PRECISO CONVERTER MAIS VENDAS!</a></a>
+                    <div class="icon"></div>
             </div>
         </div>
     </section>
@@ -534,38 +539,58 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
     </section>
     <!-- depoimentos end -->
-    <!-- our-clients -->
-    <section class="our-clients">
+
+    <!-- form-leeds -->
+    <section class="form-leeds" id="form-section">
         <div class="container">
-            <h2 class="section-title">ALGUMAS DAS <span>EMPRESAS</span> QUE JÁ <span>CRESCERAM</span> COM A
-                <span>OTIMIZE</span></h2>
+            <h2 id="formulario-de-atendimento" class="section-title">Preencha o formulário para ser
+                <span>atendido</span> por nossos
+                <span>especialistas</span></h2>
             <hr>
-            <div data-aos="flip-left" data-aos-delay="200" class="container-clients">
-                <div id="inline-img" class="item"><img src="img/logos_clients/inline.png" alt="Cliente"></div>
-                <div id="mp-img" class="item"><img src="img/logos_clients/mp_importados.png" alt="Mp Importados"></div>
-                <div id="webchange-img" class="item"><img src="img/logos_clients/web_change.png" alt="Web change">
+            <form class="form" id="form" action="">
+                <div class="form-fields">
+                    <label for="">Para começarmos, informe abaixo o seu <span>nome completo</span>:</label>
+                    <input type="text" name="name" required>
                 </div>
-                <div id="sorvete-img" class="item"><img src="img/logos_clients/sorvete_no_palito.png"
-                        alt="Sorvete no palito"></div>
-                <div id="dhiogo-img" class="item"><img src="img/logos_clients/dhiogo.png" alt="Dhiogo"></div>
-                <div id="sabor-magico-img" class="item"><img src="img/logos_clients/sabor_magico.png"
-                        alt="Sabor mágico"></div>
-                <div id="yes-img" class="item"><img src="img/logos_clients/yes.png" alt="Yes Brindes e Camisetas"></div>
-                <div id="acessorium-img" class="item"><img src="img/logos_clients/acessorium.png" alt="Acessorium">
+                <div class="form-fields">
+                    <label for="">Qual o seu melhor <span>e-mail</span>?</span></label>
+                    <input type="email" name="email" required>
                 </div>
-                <div id="doce-amarelo-img" class="item"><img src="img/logos_clients/doce-amarelo.png"
-                        alt="Doce Amarelo">
+                <div class="form-fields">
+                    <label for="">Agora informe seu <span>Telefone</span> de contato que tenha
+                        WhatsApp</span>:</span></label>
+                    <input type="text" name="telefone" id="telefone" maxlength="15" required />
                 </div>
-                <div id="faccao-excelencia-img" class="item"><img src="img/logos_clients/faccao-excelencia.png"
-                        alt="Facção Excelencia">
+                <div class="form-fields">
+                    <label for="">Agora que já temos seus dados, me conta, qual o <span>Nome da sua
+                            empresa?</span></span></label>
+                    <input type="text" name="company-name" required>
                 </div>
-                <div id="escola-graus-img" class="item"><img src="img/logos_clients/escola-graus.png"
-                        alt="Facção Excelencia">
+                <!-- <div class="form-fields">
+                    <label for="">Qual a <span>quantidade de funcionários</span> você tem hoje?(tirando os
+                        sócios)</label>
+                    <input type="number" min="1" name="number-employees" required>
                 </div>
-            </div>
+                <div class="form-fields">
+                    <label for="">Estamos quase lá... me fale a faixa de <span>faturamento mensal</span> da sua
+                        empresa?</label>
+                    <input type="text" name="invoicing" onInput="mascaraMoeda(event);" required>
+                </div> -->
+                <div>
+                    <input type="checkbox" name="accept-terms" id="accept-terms" required>
+                    <label class="accept-terms" for="accept-terms">
+                        De acordo com as Leis 12.965/2014 e 13.709/2018, que regulam o uso da intenet e o tratamento de
+                        dados pessoais no Brasil, autorizo a Otimize Gestão Empresarial a enviar notificações por e-mail
+                        ou outros meios e concordo com sua Política de Privacidade.
+                    </label>
+                </div>
+                <button type="submit" data-aos="zoom-in" class="hero-button">Quero ser atendido
+                    <div class="icon"></div>
+                </button>
+            </form>
         </div>
     </section>
-    <!-- our-clients end -->
+    <!-- form-leeds end -->
 
     <!-- otimize-in-media -->
     <section class="otimize-in-media" id="materiais">
@@ -774,57 +799,41 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     </section>
     <!-- our-consultancies end -->
 
-    <!-- material-free -->
-    <section class="form-leeds" id="materiais">
+    <!-- our-clients -->
+    <section class="our-clients">
         <div class="container">
-            <h2 id="formulario-de-atendimento" class="section-title">Preencha o formulário para ser
-                <span>atendido</span> por nossos
-                <span>especialistas</span></h2>
+            <h2 class="section-title">ALGUMAS DAS <span>EMPRESAS</span> QUE JÁ <span>CRESCERAM</span> COM A
+                <span>OTIMIZE</span></h2>
             <hr>
-            <form class="form" id="form" action="">
-                <div class="form-fields">
-                    <label for="">Para começarmos, informe abaixo o seu <span>nome completo</span>:</label>
-                    <input type="text" name="name" required>
+            <div data-aos="flip-left" data-aos-delay="200" class="container-clients">
+                <div id="inline-img" class="item"><img src="img/logos_clients/inline.png" alt="Cliente"></div>
+                <div id="mp-img" class="item"><img src="img/logos_clients/mp_importados.png" alt="Mp Importados"></div>
+                <div id="webchange-img" class="item"><img src="img/logos_clients/web_change.png" alt="Web change">
                 </div>
-                <div class="form-fields">
-                    <label for="">Qual o seu melhor <span>e-mail</span>?</span></label>
-                    <input type="email" name="email" required>
+                <div id="sorvete-img" class="item"><img src="img/logos_clients/sorvete_no_palito.png"
+                        alt="Sorvete no palito"></div>
+                <div id="dhiogo-img" class="item"><img src="img/logos_clients/dhiogo.png" alt="Dhiogo"></div>
+                <div id="sabor-magico-img" class="item"><img src="img/logos_clients/sabor_magico.png"
+                        alt="Sabor mágico"></div>
+                <div id="yes-img" class="item"><img src="img/logos_clients/yes.png" alt="Yes Brindes e Camisetas"></div>
+                <div id="acessorium-img" class="item"><img src="img/logos_clients/acessorium.png" alt="Acessorium">
                 </div>
-                <div class="form-fields">
-                    <label for="">Agora informe seu <span>Telefone</span> de contato que tenha
-                        WhatsApp</span>:</span></label>
-                    <input type="text" name="telefone" id="telefone" maxlength="15" required />
+                <div id="doce-amarelo-img" class="item"><img src="img/logos_clients/doce-amarelo.png"
+                        alt="Doce Amarelo">
                 </div>
-                <div class="form-fields">
-                    <label for="">Agora que já temos seus dados, me conta, qual o <span>Nome da sua
-                            empresa?</span></span></label>
-                    <input type="text" name="company-name" required>
+                <div id="faccao-excelencia-img" class="item"><img src="img/logos_clients/faccao-excelencia.png"
+                        alt="Facção Excelencia">
                 </div>
-                <div class="form-fields">
-                    <label for="">Qual a <span>quantidade de funcionários</span> você tem hoje?(tirando os
-                        sócios)</label>
-                    <input type="number" min="1" name="number-employees" required>
+                <div id="escola-graus-img" class="item"><img src="img/logos_clients/escola-graus.png"
+                        alt="Facção Excelencia">
                 </div>
-                <div class="form-fields">
-                    <label for="">Estamos quase lá... me fale a faixa de <span>faturamento mensal</span> da sua
-                        empresa?</label>
-                    <input type="text" name="invoicing" onInput="mascaraMoeda(event);" required>
-                </div>
-                <div>
-                    <input type="checkbox" name="accept-terms" id="accept-terms" required>
-                    <label class="accept-terms" for="accept-terms">
-                        De acordo com as Leis 12.965/2014 e 13.709/2018, que regulam o uso da intenet e o tratamento de
-                        dados pessoais no Brasil, autorizo a Otimize Gestão Empresarial a enviar notificações por e-mail
-                        ou outros meios e concordo com sua Política de Privacidade.
-                    </label>
-                </div>
-                <button type="submit" data-aos="zoom-in" class="hero-button">Quero ser atendido
-                    <div class="icon"></div>
-                </button>
-            </form>
+            </div>
+            <button data-aos="zoom-in" class="hero-button"><a href="#formulario-de-atendimento">
+                    QUERO CRESCER COM A OTIMIZE</a></a>
+                <div class="icon"></div>
         </div>
     </section>
-    <!-- material-free end -->
+    <!-- our-clients end -->
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -960,7 +969,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     </script>
     <script async src="lib/index.js"></script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.onload = function () {
             Calendly.initBadgeWidget({
                 url: 'https://calendly.com/otimizege/60min?background_color=edeffb&text_color=276484&primary_color=3e175a',
@@ -974,7 +983,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 mascara(this, mtel)
             }
         }
-    </script>
+    </script> -->
     <!-- Widget do selo do Calendly - fim -->
     <!-- AOS Animate On Scroll Library -->
     <script src="lib/aos/aos.js"></script>
@@ -983,9 +992,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             duration: 1200
         });
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1224283531474857&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
+
     <script>
         setTimeout(() => {
             const formWhatsapp = document.getElementById("rd-button-l1jpanuf")
@@ -1006,6 +1013,49 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             })
 
         }, 7000)
+    </script>
+    <script>
+        jQuery.event.special.touchstart = {
+            setup: function (_, ns, handle) {
+                if (ns.includes("noPreventDefault")) {
+                    this.addEventListener("touchstart", handle, {
+                        passive: false
+                    });
+                } else {
+                    this.addEventListener("touchstart", handle, {
+                        passive: true
+                    });
+                }
+            }
+        };
+
+        jQuery.event.special.touchmove = {
+            setup: function (_, ns, handle) {
+                if (ns.includes("noPreventDefault")) {
+                    this.addEventListener("touchmove", handle, {
+                        passive: false
+                    });
+                } else {
+                    this.addEventListener("touchmove", handle, {
+                        passive: true
+                    });
+                }
+            }
+        };
+
+        jQuery.event.special.mousewheel = {
+            setup: function (_, ns, handle) {
+                if (ns.includes("noPreventDefault")) {
+                    this.addEventListener("mousewheel", handle, {
+                        passive: false
+                    });
+                } else {
+                    this.addEventListener("mousewheel", handle, {
+                        passive: true
+                    });
+                }
+            }
+        };
     </script>
 </body>
 
