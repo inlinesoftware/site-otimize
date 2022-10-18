@@ -336,7 +336,7 @@ header .container {
     background: no-repeat center url(../img/imagem-principal-mobile.jpg);
     height: 550px;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.83);
+    background-color: rgba(0, 0, 0, 0.95);
     background-blend-mode: color;
     background-position-y: initial;
     overflow: hidden;
@@ -375,7 +375,7 @@ section.hero .container {
 
 .hero-button {
     background-color: var(--clr-dark-purple);
-    padding: 5px 22px 12px;
+    padding: 8px 22px 8px;
     border-radius: 15px;
     font-weight: bold;
     font-size: 0.8rem;
@@ -383,6 +383,15 @@ section.hero .container {
     border: 3px solid #fff;
     display: flex !important;
     align-items: center;
+    /* max-width: 95%;
+    width: 100%; */
+    justify-content: center;
+    column-gap: 15px;
+    margin: 0 auto;
+}
+
+.hero-button a{
+    margin-left: auto;
 }
 
 .hero-button:hover {
@@ -403,9 +412,8 @@ section.hero .container {
     width: 21px;
     height: 23px;
     background-repeat: no-repeat;
-    margin-left: 10px;
+    margin-left: auto;
     margin-top: 5px;
-    margin-left: 10px;
 }
 
 /* Finance Problems */
@@ -491,6 +499,10 @@ section.business-problems .container {
 #processes-and-structuring {
     background: rgb(33, 12, 47);
     background: linear-gradient(180deg, rgb(52, 19, 74) 0%, rgba(62, 23, 90, 1) 35%, rgb(79, 29, 115) 100%);
+}
+
+#processes-and-structuring button {
+    background-color: #1EC1BC;
 }
 
 #processes-and-structuring span,
@@ -584,6 +596,7 @@ section.our-team .container {
 .text-team-card-img {
     max-width: 130px;
     width: 100%;
+    min-width: 40%;
 }
 
 .text-team-card-img img {
@@ -596,7 +609,7 @@ section.our-team .container {
     line-height: 1.7rem;
     color: var(--clr-dark-purple);
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .text-team-card span {
@@ -617,12 +630,8 @@ section.our-team .container {
     box-shadow: 2px 2px 18px 0px rgba(117, 117, 117, 0.649);
     margin: 40px auto 0;
     display: block;
-    font-size: 1.4rem;
 }
 
-.our-team .hero-button a {
-    margin-right: 7px;
-}
 
 /* types-of-company */
 .types-of-company-img {
@@ -805,7 +814,7 @@ section.our-team .container {
 }
 
 .our-clients .hero-button {
-    margin: 20px auto 5px;
+    margin: 60px auto 5px;
 }
 
 .container-clients {
@@ -827,12 +836,14 @@ section.our-team .container {
     filter: grayscale(105%);
 }
 
-#acessorium-img {
-    filter: grayscale(105%) contrast(0.5);
-}
 
-#doce-amarelo-img {
+#doce-amarelo-img,
+#acessorium-img,
+#faccao-excelencia-img,
+#inline-img {
     filter: grayscale(105%) contrast(0.5);
+    max-width: 200px;
+    margin-top: 20px;
 }
 
 .container-clients .item img:hover,
@@ -1333,10 +1344,6 @@ section.our-team .container {
     color: #fff;
 }
 
-.form .hero-button a {
-    margin-right: 7px;
-}
-
 .accept-terms {
     color: var(--clr-dark-blue);
 }
@@ -1529,7 +1536,15 @@ footer.basebord {
     right: 10px;
 }
 
+#more {
+    display: none;
+}
 
+#readButton {
+    background-color: transparent;
+    color: #004977;
+    font-weight: bold;
+}
 
 @media (min-width: 576px) {
     p {
@@ -1561,7 +1576,7 @@ footer.basebord {
     .hero {
         background: no-repeat center url(../img/imagem-principal.jpg);
         background-size: cover;
-        background-color: rgba(0, 0, 0, 0.88);
+        background-color: rgba(0, 0, 0, 0.94);
         background-blend-mode: color;
         background-position-y: initial;
     }
@@ -1582,10 +1597,22 @@ footer.basebord {
         border-radius: 27px;
         font-weight: 700;
         font-size: 1rem;
+        max-width: none;
+        width: auto;
+        margin: initial;
+        justify-content: initial;
+    }
+
+    .hero-button a{
+        margin-left: 0;
     }
 
     .hero {
         height: 870px;
+    }
+
+    .icon {
+        margin-left: 10px;
     }
 
     .hero-container .hero-button {
@@ -1640,15 +1667,19 @@ footer.basebord {
         background-blend-mode: lighten;
         background-position-y: initial;
     }
+
+    .comentarios-detalhes p {
+        font-size: 1.22rem;
+    }
+
+    .text-team-card p {
+        font-size: 1.4rem;
+    }
 }
 
 .aspas-img-2 {
     width: 30px;
     margin-left: 15px;
-}
-
-.comentarios-detalhes p {
-    font-size: 1.32rem;
 }
 
 @media (min-width: 768px) {
@@ -1846,6 +1877,14 @@ footer.basebord {
 
     .container-clients .item {
         margin: 0;
+    }
+
+    #readButton {
+        display: none;
+    }
+
+    #more {
+        display: block;
     }
 
 }

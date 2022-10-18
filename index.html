@@ -330,9 +330,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <hr>
             <div data-aos="flip-left" class="details-team">
                 <div>
-                    <div class="video-team">
-                        <video title="Video Time Otimize" src="video/video-otimize-ge.mp4" poster="./video/Foto.jpeg"
-                            controls></video>
+                    <div id="video-team" class="video-team">
+                        <video id="video" controls title="Video Time Otimize" src="video/video-otimize-ge.mp4"
+                            poster="./video/Foto.jpeg" controls></video>
                     </div><!-- video -->
                     <div class="details-team-paragraph">
                         <p>Queremos que você conheça o nosso time!</p>
@@ -353,7 +353,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <div class="text-team-card">
                         <div class="text-team-card-img"><img src="img/20943629.png" alt=""></div>
                         <div>
-                            <p><span>ESPECIALISTA EM</span> <br> PROCESSOS EMPRESARIAIS E ESTRUTURAÇÃO DE EMPRESAS</p>
+                            <p><span>ESPECIALISTA EM:</span> <br>MELHORIA DE PROCESSOS EMPRESARIAIS (LEAN SEIS SIGMA) E
+                                ESTRUTURAÇÃO DE EMPRESAS</p>
                         </div>
                     </div>
                     <div class="text-team-card">
@@ -518,9 +519,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <p>Então, sobre a consultoria, estou gostando bastante. É como se fosse uma luz no fim do túnel.
                         Veio como uma esperança para dias difíceis. Estou aprendendo a colocar preços nos produtos e
                         entender meu verdadeiro lucro. Também estou entendendo como se faz pra dar entrada e saída de um
-                        produto e controlar meu estoque que era algo difícil pra mim. Sem falar na minha própria vida
-                        financeira, que eu mal sabia quanto gastava no final do mês. Ainda tenho muito o que aprender,
-                        mas até agora tem sido de extrema importância e feito a maior diferença nos meus dias.</p>
+                        <span id="dots">...</span>
+                        <span id="more">
+                            produto e controlar meu estoque que era algo difícil pra mim.Sem falar na minha própria vida
+                            financeira, que eu mal sabia quanto gastava no final do mês. Ainda tenho muito o que
+                            aprender,
+                            mas até agora tem sido de extrema importância e feito a maior diferença nos meus
+                            dias.</span>
+                        <button id="readButton">Ver Mais</button></p>
+                    </p>
                     <div class="aspas-img-2"><img src="img/aspas02.png" alt="aspas-duplas"></div>
                     <p class="paragraph-author">Amanda</p>
                     <p>Proprietária Sorvete no Palito</p>
@@ -584,7 +591,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         ou outros meios e concordo com sua Política de Privacidade.
                     </label>
                 </div>
-                <button type="submit" data-aos="zoom-in" class="hero-button">Quero ser atendido
+                <button type="submit" data-aos="zoom-in" class="hero-button"><a href="#formulario-de-atendimento">
+                    Quero ser atendido</a>
                     <div class="icon"></div>
                 </button>
             </form>
@@ -805,7 +813,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <h2 class="section-title">ALGUMAS DAS <span>EMPRESAS</span> QUE JÁ <span>CRESCERAM</span> COM A
                 <span>OTIMIZE</span></h2>
             <hr>
-            <div data-aos="flip-left" data-aos-delay="200" class="container-clients">
+            <div id="clientes" data-aos="flip-left" data-aos-delay="200" class="container-clients">
                 <div id="inline-img" class="item"><img src="img/logos_clients/inline.png" alt="Cliente"></div>
                 <div id="mp-img" class="item"><img src="img/logos_clients/mp_importados.png" alt="Mp Importados"></div>
                 <div id="webchange-img" class="item"><img src="img/logos_clients/web_change.png" alt="Web change">
@@ -876,7 +884,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
                         <div class="contactos-basebord-container">
                             <img src="img/icone.svg" alt="Telefone">
-                            <p>Trabalhamos com consultorias de forma presencial e também online. A sua escolha.</p>
+                            <p>Trabalhamos com consultorias de forma presencial e também online.</p>
                         </div>
 
                         <div class="contactos-basebord-container">
@@ -966,6 +974,77 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 }
             });
         });
+        const more = document.getElementById("more")
+        const dots = document.getElementById("dots")
+        const readButton = document.getElementById("readButton")
+
+        $('#readButton').on('click', function () {
+            if (dots.style.display === "none") {
+                dots.style.display = "inline"
+                readButton.innerHTML = "Ver Mais"
+                more.style.display = "none"
+            } else {
+                dots.style.display = "none"
+                readButton.innerHTML = "Ver Menos"
+                more.style.display = "inline"
+            }
+
+            $('.owl-carousel').trigger('refresh.owl.carousel')
+        })
+
+        const carrouselWidth = () => {
+            let container = document.getElementById("clientes")
+            let clientes = $("#clientes")
+
+            if ($(window).width() < 560) {
+                container.classList.add("owl-carousel")
+                container.classList.add("owl-theme")
+                let itensContainer = document.getElementsByClassName("item")
+
+                for (const element of itensContainer) {
+                    element.classList.add("items")
+                }
+
+                clientes.owlCarousel({
+                    slideTransition: 'all 0.5s ease 0s',
+                    items: 1,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        576: {
+                            items: 1
+                        },
+                        768: {
+                            items: 1
+                        },
+                        960: {
+                            items: 1
+                        }
+                    }
+                });
+
+                $('.owl-carousel').trigger('refresh.owl.carousel')
+            }
+
+
+            if ($(window).width() > 560) {
+                clientes.owlCarousel('destroy');
+                $('.owl-carousel').trigger('refresh.owl.carousel')
+                console.log('oi');
+            }
+        }
+
+        window.onresize = function () {
+            carrouselWidth()
+        }
+
+        carrouselWidth()
     </script>
     <script async src="lib/index.js"></script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -997,7 +1076,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         setTimeout(() => {
             const formWhatsapp = document.getElementById("rd-button-l1jpanuf")
 
-            formWhatsapp.addEventListener('click', () => {
+            formWhatsapp?.addEventListener('click', () => {
                 // Para contato whatsap
                 fbq('track', 'Contact')
             })
@@ -1007,7 +1086,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         setTimeout(() => {
             const calendlyWidget = document.getElementsByClassName('calendly-badge-widget')[0]
 
-            calendlyWidget.addEventListener('click', () => {
+            calendlyWidget?.addEventListener('click', () => {
                 // Para agendamento
                 fbq('track', 'Schedule')
             })
