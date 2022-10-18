@@ -1675,6 +1675,10 @@ footer.basebord {
     .text-team-card p {
         font-size: 1.4rem;
     }
+
+    .text-team-card-img {
+        min-width: auto;
+    }
 }
 
 .aspas-img-2 {
