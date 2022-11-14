@@ -390,7 +390,7 @@ section.hero .container {
     margin: 0 auto;
 }
 
-.hero-button a{
+.hero-button a {
     margin-left: auto;
 }
 
@@ -1600,7 +1600,7 @@ footer.basebord {
         justify-content: initial;
     }
 
-    .hero-button a{
+    .hero-button a {
         margin-left: 0;
     }
 
@@ -1899,6 +1899,10 @@ footer.basebord {
 
     .container-clients {
         column-gap: 228px;
+    }
+
+    .modal-content p {
+        font-size: 1.3rem;
     }
 
 }
