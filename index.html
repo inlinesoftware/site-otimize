@@ -565,7 +565,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="form-fields">
                     <label>Agora informe seu <span>Telefone</span> de contato que tenha
                         WhatsApp</span>:</span></label>
-                    <input type="text" name="telefone" id="phone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" maxlength="15" required />
+                    <input  id="telefone" type="text" name="telefone" maxlength="11" required />
                 </div>
                 <div class="form-fields">
                     <label>Agora que já temos seus dados, me conta, qual o <span>Nome da sua
@@ -1046,17 +1046,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     </script>
     <script async src="lib/index.js"></script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <!-- <script type="text/javascript">
-        window.onload = function () {
-            Calendly.initBadgeWidget({
-                url: 'https://calendly.com/otimizege/60min?background_color=edeffb&text_color=276484&primary_color=3e175a',
-                text: 'Agende um Horário!',
-                color: '#1EC1BC',
-                textColor: '#FFFFFF',
-                branding: true
-            });
-        }
-    </script> -->
+    <script type="text/javascript">
+        // window.onload = function () {
+        //     Calendly.initBadgeWidget({
+        //         url: 'https://calendly.com/otimizege/60min?background_color=edeffb&text_color=276484&primary_color=3e175a',
+        //         text: 'Agende um Horário!',
+        //         color: '#1EC1BC',
+        //         textColor: '#FFFFFF',
+        //         branding: true
+        //     });
+        // }
+
+    </script>
     <!-- Widget do selo do Calendly - fim -->
     <!-- AOS Animate On Scroll Library -->
     <script src="lib/aos/aos.js"></script>
