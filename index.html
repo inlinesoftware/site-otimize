@@ -565,7 +565,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="form-fields">
                     <label>Agora informe seu <span>Telefone</span> de contato que tenha
                         WhatsApp</span>:</span></label>
-                    <input type="text" name="telefone" id="telefone" maxlength="15" required />
+                    <input type="text" name="telefone" id="phone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" maxlength="15" required />
                 </div>
                 <div class="form-fields">
                     <label>Agora que já temos seus dados, me conta, qual o <span>Nome da sua
@@ -1055,10 +1055,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 textColor: '#FFFFFF',
                 branding: true
             });
-
-            id('telefone').onkeyup = function () {
-                mascara(this, mtel)
-            }
         }
     </script> -->
     <!-- Widget do selo do Calendly - fim -->
